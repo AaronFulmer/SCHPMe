@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class JournalScreens: UIViewController {
 
     @IBOutlet weak var journalButton: UIImageView!
     
-    @IBAction func goToHome(segue: UIStoryboardSegue){}
-    
-    @IBAction func goToHome2(segue: UIStoryboardSegue){}
+    @IBAction func gohome2(_ sender: Any) {
+        performSegue(withIdentifier: "goHome2", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

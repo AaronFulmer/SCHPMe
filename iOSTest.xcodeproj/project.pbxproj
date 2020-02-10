@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C76BEA023D5EC800039AF99 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C76BE9F23D5EC800039AF99 /* Journal.swift */; };
+		0C76BEA823D6147A0039AF99 /* journal_screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C76BEA723D6147A0039AF99 /* journal_screens.swift */; };
+		0C76BEAA23D625FF0039AF99 /* bpNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C76BEA923D625FF0039AF99 /* bpNewEntry.swift */; };
 		0C9726F223D20EA700A9ED2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9726F123D20EA700A9ED2A /* AppDelegate.swift */; };
 		0C9726F423D20EA700A9ED2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9726F323D20EA700A9ED2A /* SceneDelegate.swift */; };
 		0C9726F623D20EA700A9ED2A /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9726F523D20EA700A9ED2A /* HomeScreen.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C76BE9F23D5EC800039AF99 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		0C76BEA723D6147A0039AF99 /* journal_screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journal_screens.swift; sourceTree = "<group>"; };
+		0C76BEA923D625FF0039AF99 /* bpNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bpNewEntry.swift; sourceTree = "<group>"; };
 		0C9726EE23D20EA700A9ED2A /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9726F123D20EA700A9ED2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C9726F323D20EA700A9ED2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				0C9726FA23D20EA800A9ED2A /* Assets.xcassets */,
 				0C9726FC23D20EA800A9ED2A /* LaunchScreen.storyboard */,
 				0C9726FF23D20EA800A9ED2A /* Info.plist */,
+				0C76BE9F23D5EC800039AF99 /* Journal.swift */,
+				0C76BEA723D6147A0039AF99 /* journal_screens.swift */,
+				0C76BEA923D625FF0039AF99 /* bpNewEntry.swift */,
 			);
 			path = iOSTest;
 			sourceTree = "<group>";
@@ -201,8 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C9726F623D20EA700A9ED2A /* HomeScreen.swift in Sources */,
+				0C76BEAA23D625FF0039AF99 /* bpNewEntry.swift in Sources */,
 				0C9726F223D20EA700A9ED2A /* AppDelegate.swift in Sources */,
 				0C9726F423D20EA700A9ED2A /* SceneDelegate.swift in Sources */,
+				0C76BEA023D5EC800039AF99 /* Journal.swift in Sources */,
+				0C76BEA823D6147A0039AF99 /* journal_screens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,13 +375,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z54ZWA734C;
 				INFOPLIST_FILE = iOSTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.iOSTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iOSTestFMUSCRA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,13 +394,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z54ZWA734C;
 				INFOPLIST_FILE = iOSTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.iOSTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iOSTestFMUSCRA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

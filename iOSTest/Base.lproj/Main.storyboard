@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="top" id="gP4-mZ-Uyt"/>
                         <viewControllerLayoutGuide type="bottom" id="VNx-fC-0rh"/>
                     </layoutGuides>
-                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -24,15 +24,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="Resources" translatesAutoresizingMaskIntoConstraints="NO" id="VwC-78-wvJ">
-                                <rect key="frame" x="87" y="485" width="240" height="223"/>
+                                <rect key="frame" x="87" y="485" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="schealth+me" translatesAutoresizingMaskIntoConstraints="NO" id="eDB-U4-FG5">
                                 <rect key="frame" x="168" y="39" width="238" height="55"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Journal" translatesAutoresizingMaskIntoConstraints="NO" id="JPX-4m-2qA">
-                                <rect key="frame" x="87" y="175" width="240" height="241"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Journal" id="JPX-4m-2qA">
+                                <rect key="frame" x="87" y="175" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -40,7 +40,7 @@
                                 </connections>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196078431372551" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="journalButton" destination="JPX-4m-2qA" id="dTa-mW-vH6"/>
@@ -49,47 +49,876 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="J5P-ze-rMg">
                     <connections>
-                        <segue destination="HVt-mw-ntS" kind="presentation" modalPresentationStyle="fullScreen" id="sh0-Lv-B64"/>
+                        <segue destination="HVt-mw-ntS" kind="presentation" modalPresentationStyle="fullScreen" id="36C-G3-Egv"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="137.27678571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Blood Pressure Entry-->
+        <scene sceneID="ogi-3q-g2N">
+            <objects>
+                <viewController id="N0a-o1-6oj" customClass="BloodPressureEntry" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ob8-vj-tX2"/>
+                        <viewControllerLayoutGuide type="bottom" id="8fe-Ja-EO4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p8o-A0-f3j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bpHome" translatesAutoresizingMaskIntoConstraints="NO" id="lNw-7Q-iYe">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HQQ-m7-MqV" appends="YES" id="8l1-c7-jwx"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Systolic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opm-sm-g8v">
+                                <rect key="frame" x="166" y="151" width="82" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Top Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-ta-YIg">
+                                <rect key="frame" x="118" y="199" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="txtSystolicActive:" destination="N0a-o1-6oj" eventType="editingDidBegin" id="F3t-3E-UuD"/>
+                                    <action selector="txtSystolicInactive:" destination="N0a-o1-6oj" eventType="editingDidEnd" id="35C-Lf-lm0"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diastolic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73D-RE-7x4">
+                                <rect key="frame" x="166" y="266" width="90" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Bottom Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tx2-Pl-8g6">
+                                <rect key="frame" x="118" y="314" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="txtDiastolicActive:" destination="N0a-o1-6oj" eventType="editingDidBegin" id="BOH-vG-wAV"/>
+                                    <action selector="txtDiastolicInactive:" destination="N0a-o1-6oj" eventType="editingDidEnd" id="aZV-NP-EWo"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Date Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xex-hb-TrV">
+                                <rect key="frame" x="113" y="386" width="188" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="795-7K-7kg">
+                                <rect key="frame" x="118" y="431" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="dateActivate:" destination="N0a-o1-6oj" eventType="editingDidBegin" id="hQw-5B-dKn"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Date Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-oe-Hlc">
+                                <rect key="frame" x="113" y="500" width="188" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="On9-D3-lyX">
+                                <rect key="frame" x="117" y="550" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="timeActivate:" destination="N0a-o1-6oj" eventType="editingDidBegin" id="U0X-8C-uoF"/>
+                                </connections>
+                            </textField>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eH2-w8-1A1">
+                                <rect key="frame" x="20" y="188" width="374" height="349"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="TDC-jG-oyu">
+                                        <rect key="frame" x="11" y="-5" width="358" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bt-CJ-LSu">
+                                        <rect key="frame" x="55" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="dateCancel:" destination="N0a-o1-6oj" eventType="touchUpInside" id="h8c-Th-Ij5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0C-SE-6B0">
+                                        <rect key="frame" x="232" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="datePicked:" destination="N0a-o1-6oj" eventType="touchUpInside" id="v8y-nm-iUv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-Xh-Vyu">
+                                <rect key="frame" x="20" y="188" width="374" height="349"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qIi-wr-1S6">
+                                        <rect key="frame" x="11" y="-5" width="358" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uz7-gc-7vi">
+                                        <rect key="frame" x="55" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="timeCancel:" destination="N0a-o1-6oj" eventType="touchUpInside" id="be4-zU-7UV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qff-Vd-gyz">
+                                        <rect key="frame" x="232" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="timePicked:" destination="N0a-o1-6oj" eventType="touchUpInside" id="XiR-mQ-rTJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="date" destination="TDC-jG-oyu" id="ri7-YO-r02"/>
+                        <outlet property="time" destination="qIi-wr-1S6" id="3v7-Xd-pXX"/>
+                        <outlet property="txtDateBox" destination="795-7K-7kg" id="m9V-fy-nkf"/>
+                        <outlet property="txtDiastolic" destination="tx2-Pl-8g6" id="ZO5-PO-Ln8"/>
+                        <outlet property="txtSystolic" destination="bF3-ta-YIg" id="mrg-mq-eoX"/>
+                        <outlet property="txtTimeBox" destination="On9-D3-lyX" id="BdK-as-o35"/>
+                        <outlet property="viewDate" destination="eH2-w8-1A1" id="F04-jd-K74"/>
+                        <outlet property="viewTime" destination="aZ8-Xh-Vyu" id="Mc0-za-hr6"/>
+                        <segue destination="KwU-v7-o3W" kind="unwind" identifier="goHomeBpEntry" unwindAction="goToHomeWithSegue:" id="h2l-Yw-duM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izk-Z5-QmR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KwU-v7-o3W" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="HQQ-m7-MqV">
+                    <connections>
+                        <action selector="gohome:" destination="N0a-o1-6oj" id="RIV-NB-vEh"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-246.37681159420291" y="-1319.1964285714284"/>
+        </scene>
+        <!--Journal Screens-->
+        <scene sceneID="0a1-RJ-nQR">
+            <objects>
+                <viewController id="nIk-kr-WsY" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JqR-Ft-lyA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Auf-fk-D4a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f3N-bj-BPx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bpHome" translatesAutoresizingMaskIntoConstraints="NO" id="Dng-cj-u6i">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MLQ-la-MJ5" appends="YES" id="mjI-PZ-78b"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bpGraph" id="1t6-tq-j0p">
+                                <rect key="frame" x="87" y="175" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bpEntry" id="y8Q-6d-jr1">
+                                <rect key="frame" x="87" y="485" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pCb-mU-dic" appends="YES" id="XoN-kf-wdp"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blood Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o6u-d4-y0p">
+                                <rect key="frame" x="188" y="59" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764705882351" green="0.12156862745098039" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="dPz-9m-Ea9" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="89a-ww-pU5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vf-mH-0ra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="dPz-9m-Ea9" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="pCb-mU-dic" userLabel="Entry Button">
+                    <connections>
+                        <segue destination="N0a-o1-6oj" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="ohc-qc-899"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="MLQ-la-MJ5" userLabel="Home Button">
+                    <connections>
+                        <action selector="gohome2:" destination="nIk-kr-WsY" id="Qu8-Z6-bhr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="503" y="-607"/>
+        </scene>
+        <!--Journal-->
         <scene sceneID="8jp-XS-OIX">
             <objects>
-                <viewController id="HVt-mw-ntS" sceneMemberID="viewController">
+                <viewController id="HVt-mw-ntS" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Ms-L2-StD"/>
                         <viewControllerLayoutGuide type="bottom" id="3BJ-zh-vb0"/>
                     </layoutGuides>
-                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="52H-s7-K4v">
+                    <view key="view" contentMode="scaleToFill" id="52H-s7-K4v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home Button" translatesAutoresizingMaskIntoConstraints="NO" id="bLQ-qh-DPx">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home Button" translatesAutoresizingMaskIntoConstraints="NO" id="bLQ-qh-DPx">
                                 <rect key="frame" x="10" y="44" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yfL-2j-QMj" appends="YES" id="oM8-dO-x2Z"/>
+                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Srq-rD-wzF">
-                                <rect key="frame" x="87" y="187" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HealthJournal" translatesAutoresizingMaskIntoConstraints="NO" id="Srq-rD-wzF">
+                                <rect key="frame" x="154" y="34" width="240" height="72"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bloodpressure" translatesAutoresizingMaskIntoConstraints="NO" id="Dms-mq-r9l">
+                                <rect key="frame" x="20" y="202" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jOc-ka-w4P" appends="YES" id="hTm-iB-7kg"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chol" translatesAutoresizingMaskIntoConstraints="NO" id="nMQ-F8-KHC">
+                                <rect key="frame" x="20" y="394" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EAp-58-1rD" appends="YES" id="dtJ-Bz-ghH"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vacc" translatesAutoresizingMaskIntoConstraints="NO" id="if4-Ul-MdW">
+                                <rect key="frame" x="207" y="394" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JVL-sw-280" appends="YES" id="qVR-e9-urQ"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bloodsugar" translatesAutoresizingMaskIntoConstraints="NO" id="WBh-pO-yEp">
+                                <rect key="frame" x="207" y="202" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Dxa-SJ-ECO" appends="YES" id="q98-jy-Efx"/>
+                                </connections>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8xo-y2-09G">
+                                <rect key="frame" x="188" y="825" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.68627450980392157" green="0.87450980392156863" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.10980392156862745" green="0.40392156862745099" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078431372551" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="PTg-aG-Dha" appends="YES" id="xXx-95-kkI"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="oNg-Bc-O6k"/>
+                    <connections>
+                        <segue destination="2X2-7F-oFJ" kind="unwind" identifier="goHome" unwindAction="goToHomeWithSegue:" id="ANi-7I-3H7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSh-Kh-y8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2X2-7F-oFJ" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="left" id="PTg-aG-Dha">
+                    <connections>
+                        <segue destination="Zaz-YG-RMo" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="JdY-tK-GRH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="yfL-2j-QMj" userLabel="Home Button">
+                    <connections>
+                        <action selector="gohome:" destination="HVt-mw-ntS" id="iY2-KI-yD9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="jOc-ka-w4P" userLabel="Blood Pressure Button">
+                    <connections>
+                        <segue destination="nIk-kr-WsY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="i1F-PD-r4t"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Dxa-SJ-ECO" userLabel="Blood Sugar Button">
+                    <connections>
+                        <segue destination="Is4-8A-8Zq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Vow-cp-kzi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="EAp-58-1rD" userLabel="Cholesterol Button">
+                    <connections>
+                        <segue destination="2HV-tS-2Rh" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Ss6-dK-oq2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JVL-sw-280" userLabel="Vaccinations Button">
+                    <connections>
+                        <segue destination="DTa-4u-ppB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="FAT-fa-qT9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1253" y="134"/>
+            <point key="canvasLocation" x="1250.7246376811595" y="133.92857142857142"/>
+        </scene>
+        <!--Journal-->
+        <scene sceneID="Sjr-gB-q1O">
+            <objects>
+                <viewController id="Zaz-YG-RMo" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ydv-KM-JHe"/>
+                        <viewControllerLayoutGuide type="bottom" id="G4G-ad-p6E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GO1-fH-Tjg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home Button" translatesAutoresizingMaskIntoConstraints="NO" id="ap8-zk-tmU">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5Ho-gX-2Vr" appends="YES" id="a0T-94-5FG"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HealthJournal" translatesAutoresizingMaskIntoConstraints="NO" id="dcb-Tr-bLb">
+                                <rect key="frame" x="154" y="34" width="240" height="72"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weight_button" translatesAutoresizingMaskIntoConstraints="NO" id="Hbx-LS-QYp">
+                                <rect key="frame" x="20" y="202" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hyH-52-hIL" appends="YES" id="s5R-2Q-rwk"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="medications_button" translatesAutoresizingMaskIntoConstraints="NO" id="ijh-bV-AvD">
+                                <rect key="frame" x="20" y="394" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aDq-lh-MpS" appends="YES" id="WrN-3e-St4"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reports_button" translatesAutoresizingMaskIntoConstraints="NO" id="8FF-NU-ZPm">
+                                <rect key="frame" x="207" y="394" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="allergies_button" translatesAutoresizingMaskIntoConstraints="NO" id="II5-mR-JSF">
+                                <rect key="frame" x="207" y="202" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bAI-x2-UvP" appends="YES" id="gVL-LU-OcK"/>
+                                </connections>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="sDg-5d-F5S">
+                                <rect key="frame" x="188" y="825" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.68627450980000004" green="0.87450980389999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.10980392160000001" green="0.4039215686" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hWg-ve-tLr" appends="YES" id="RrJ-Pk-SsE"/>
+                            <outletCollection property="gestureRecognizers" destination="BVD-uQ-5gJ" appends="YES" id="JbM-q0-UJm"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="e8m-Fb-jrP"/>
+                    <connections>
+                        <segue destination="g9s-28-hjH" kind="unwind" identifier="goHome" unwindAction="goToHomeWithSegue:" id="PNL-QP-ljA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgY-bz-4m7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="g9s-28-hjH" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="5Ho-gX-2Vr" userLabel="Home Button">
+                    <connections>
+                        <action selector="gohome:" destination="Zaz-YG-RMo" id="OFh-kf-bD4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="hWg-ve-tLr">
+                    <connections>
+                        <action selector="backPage1:" destination="Zaz-YG-RMo" id="Avc-u4-gqo"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="BVD-uQ-5gJ">
+                    <connections>
+                        <segue destination="N9q-6h-ksW" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="yhO-gr-Pr8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="hyH-52-hIL" userLabel="Body Weight">
+                    <connections>
+                        <segue destination="ixK-dm-O0a" kind="presentation" modalPresentationStyle="fullScreen" id="Wz8-aN-h0y"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bAI-x2-UvP" userLabel="Allergies">
+                    <connections>
+                        <segue destination="tjh-25-8Je" kind="presentation" modalPresentationStyle="fullScreen" id="MzB-w5-kjU"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="aDq-lh-MpS" userLabel="Medications">
+                    <connections>
+                        <segue destination="iCv-On-84K" kind="presentation" modalPresentationStyle="fullScreen" id="hPZ-m2-puI"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2264" y="134"/>
+        </scene>
+        <!--Journal-->
+        <scene sceneID="ttI-en-Svc">
+            <objects>
+                <viewController id="N9q-6h-ksW" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TVd-Ow-ZT5"/>
+                        <viewControllerLayoutGuide type="bottom" id="CMV-nZ-XAU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bch-4Z-lDb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home Button" translatesAutoresizingMaskIntoConstraints="NO" id="90s-7J-Dko">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9UB-bm-0LD" appends="YES" id="PAB-tA-PBp"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HealthJournal" translatesAutoresizingMaskIntoConstraints="NO" id="eUz-eo-ysb">
+                                <rect key="frame" x="154" y="34" width="240" height="72"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="edit_profile_button" translatesAutoresizingMaskIntoConstraints="NO" id="h8t-XZ-Mex">
+                                <rect key="frame" x="20" y="202" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="cK2-rK-ANP">
+                                <rect key="frame" x="188" y="825" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.68627450980000004" green="0.87450980389999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.10980392160000001" green="0.4039215686" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="h1h-mY-4jQ" appends="YES" id="Xua-6E-fUu"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="OZN-o2-HGc"/>
+                    <connections>
+                        <segue destination="PFC-8q-qfg" kind="unwind" identifier="goHome" unwindAction="goToHomeWithSegue:" id="y60-Tr-OLx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUG-6v-Z5K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PFC-8q-qfg" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="9UB-bm-0LD">
+                    <connections>
+                        <action selector="gohome:" destination="N9q-6h-ksW" id="B6t-Kb-U2V"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="h1h-mY-4jQ">
+                    <connections>
+                        <action selector="backPage2:" destination="N9q-6h-ksW" id="PWC-df-OGp"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3710" y="137"/>
+        </scene>
+        <!--Journal Screens-->
+        <scene sceneID="rxQ-6Y-5Z3">
+            <objects>
+                <viewController id="Is4-8A-8Zq" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lOW-mx-RfA"/>
+                        <viewControllerLayoutGuide type="bottom" id="dT0-Ht-4d4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EaY-YW-bU3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bsHome" translatesAutoresizingMaskIntoConstraints="NO" id="axK-Sl-m9n">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EzJ-m7-IPA" appends="YES" id="D8y-BZ-Zjx"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bsGraph" id="Yld-KU-n8W">
+                                <rect key="frame" x="87" y="175" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bsEntry" id="rRr-6F-mud">
+                                <rect key="frame" x="87" y="485" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blood Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2OG-qa-pAp">
+                                <rect key="frame" x="223" y="52" width="171" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.51372549019607838" green="0.36470588235294116" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="AQM-Ew-kCh" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="8e7-0M-hzL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KIH-L4-ZYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AQM-Ew-kCh" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="EzJ-m7-IPA" userLabel="Home">
+                    <connections>
+                        <action selector="gohome2:" destination="Is4-8A-8Zq" id="N4t-Eu-PGG"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1378" y="-607"/>
+        </scene>
+        <!--Journal Screens-->
+        <scene sceneID="DX4-M7-QrD">
+            <objects>
+                <viewController id="2HV-tS-2Rh" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7BJ-5e-NMq"/>
+                        <viewControllerLayoutGuide type="bottom" id="SSX-Qx-WSJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJK-cG-x75">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chHome" translatesAutoresizingMaskIntoConstraints="NO" id="bQx-Fm-9Ws">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gx0-MA-16s" appends="YES" id="SOs-Ij-IbN"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chGraph" id="dsM-rO-wVh">
+                                <rect key="frame" x="87" y="175" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chEntry" id="oX3-JO-Ewm">
+                                <rect key="frame" x="87" y="485" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cholesterol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i1Q-Xc-MsV">
+                                <rect key="frame" x="188" y="59" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.85490196078431369" green="0.62745098039215685" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="waI-Xo-h7M" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="UGW-QP-YW8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRb-Z5-cok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="waI-Xo-h7M" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="gx0-MA-16s">
+                    <connections>
+                        <action selector="gohome2:" destination="2HV-tS-2Rh" id="ybq-Lb-VZa"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="503" y="830"/>
+        </scene>
+        <!--Journal Screens-->
+        <scene sceneID="KyV-qI-Y4N">
+            <objects>
+                <viewController id="DTa-4u-ppB" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AqQ-Q4-VQE"/>
+                        <viewControllerLayoutGuide type="bottom" id="4HY-cp-VJg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WYl-ce-Hxq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vaHome" translatesAutoresizingMaskIntoConstraints="NO" id="YZn-eo-sDC">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="byW-bw-t65" appends="YES" id="T6P-qL-oR5"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vaCards" id="Mjo-d1-33R">
+                                <rect key="frame" x="87" y="175" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vaEntry" id="ro8-CI-lBC">
+                                <rect key="frame" x="87" y="485" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vaccinations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ANw-4V-qFX">
+                                <rect key="frame" x="188" y="59" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.32156862745098036" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="LCo-Ch-Z84" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="gBM-x0-F51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfg-eH-JIU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="LCo-Ch-Z84" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="byW-bw-t65">
+                    <connections>
+                        <action selector="gohome2:" destination="DTa-4u-ppB" id="OAt-bg-zHs"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1377" y="846"/>
+        </scene>
+        <!--Journal Screens-->
+        <scene sceneID="qxe-cn-rxs">
+            <objects>
+                <viewController id="ixK-dm-O0a" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W7G-9p-h99"/>
+                        <viewControllerLayoutGuide type="bottom" id="SSd-Sm-aFQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Stz-gp-h49">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bwHome" translatesAutoresizingMaskIntoConstraints="NO" id="76D-y3-J6W">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hij-px-VD1" appends="YES" id="4fr-jm-dez"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bwGraph" id="FmO-4A-yps">
+                                <rect key="frame" x="87" y="175" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bwEntry" id="Xwl-fr-SX6">
+                                <rect key="frame" x="87" y="485" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Body Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IlK-wB-bqY">
+                                <rect key="frame" x="223" y="44" width="171" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.4431372549" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="ndf-8y-7bf" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="tK8-uY-wP5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ua-ib-Hq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ndf-8y-7bf" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="hij-px-VD1" userLabel="Home">
+                    <connections>
+                        <action selector="gohome2:" destination="ixK-dm-O0a" id="Hcp-kh-ISF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2100" y="-607"/>
+        </scene>
+        <!--Journal Screens-->
+        <scene sceneID="oim-gt-oAe">
+            <objects>
+                <viewController id="tjh-25-8Je" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OBd-uK-cex"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mpf-ly-82I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ERo-ZQ-ws7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alHome" translatesAutoresizingMaskIntoConstraints="NO" id="8Sl-hJ-UsR">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="61D-FF-Bes" appends="YES" id="8ch-lu-WGb"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alCards" id="u1a-Sx-9Dt">
+                                <rect key="frame" x="87" y="175" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alEntry" id="xsI-xx-PWp">
+                                <rect key="frame" x="87" y="485" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allergies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9H8-X3-LHO">
+                                <rect key="frame" x="271" y="52" width="123" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.78039215689999997" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="8ae-Pd-Vln" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="GNa-9E-RAH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PsB-K7-EWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8ae-Pd-Vln" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="61D-FF-Bes" userLabel="Home">
+                    <connections>
+                        <action selector="gohome2:" destination="tjh-25-8Je" id="yO8-dq-qHC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2847.826086956522" y="-607.36607142857144"/>
+        </scene>
+        <!--Journal Screens-->
+        <scene sceneID="iXn-WJ-1Q0">
+            <objects>
+                <viewController id="iCv-On-84K" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kKt-OE-Mnm"/>
+                        <viewControllerLayoutGuide type="bottom" id="1dp-eb-j8E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ctr-ni-Tmx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mdHome" translatesAutoresizingMaskIntoConstraints="NO" id="5vS-Xv-WOA">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dIg-M8-h2D" appends="YES" id="usn-Uz-7ti"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mdCards" id="2zb-1W-Kej">
+                                <rect key="frame" x="87" y="175" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mdEntry" id="AM6-Q5-ZaZ">
+                                <rect key="frame" x="87" y="485" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1dM-Gi-rZh">
+                                <rect key="frame" x="223" y="52" width="171" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.85882352939999995" green="0.28235294119999998" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="fH7-mc-i9J" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="sG1-Ow-k9e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGQ-90-h3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fH7-mc-i9J" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="dIg-M8-h2D" userLabel="Home">
+                    <connections>
+                        <action selector="gohome2:" destination="iCv-On-84K" id="6ni-ZA-jsf"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2158" y="846"/>
         </scene>
     </scenes>
     <resources>
+        <image name="HealthJournal" width="1203" height="244"/>
         <image name="Home" width="203" height="203"/>
         <image name="Home Button" width="300" height="300"/>
         <image name="Journal" width="100" height="100"/>
         <image name="Resources" width="300" height="300"/>
+        <image name="alCards" width="1499" height="1500"/>
+        <image name="alEntry" width="1499" height="1500"/>
+        <image name="alHome" width="694" height="684"/>
+        <image name="allergies_button" width="400" height="400"/>
+        <image name="bloodpressure" width="400" height="400"/>
+        <image name="bloodsugar" width="400" height="400"/>
+        <image name="bpEntry" width="400" height="400"/>
+        <image name="bpGraph" width="400" height="400"/>
+        <image name="bpHome" width="400" height="400"/>
+        <image name="bsEntry" width="400" height="400"/>
+        <image name="bsGraph" width="400" height="400"/>
+        <image name="bsHome" width="400" height="400"/>
+        <image name="bwEntry" width="1499" height="1500"/>
+        <image name="bwGraph" width="1499" height="1500"/>
+        <image name="bwHome" width="694" height="684"/>
+        <image name="chEntry" width="400" height="400"/>
+        <image name="chGraph" width="400" height="400"/>
+        <image name="chHome" width="400" height="400"/>
+        <image name="chol" width="1499" height="1500"/>
+        <image name="edit_profile_button" width="400" height="400"/>
+        <image name="mdCards" width="1499" height="1500"/>
+        <image name="mdEntry" width="1499" height="1500"/>
+        <image name="mdHome" width="694" height="684"/>
+        <image name="medications_button" width="400" height="400"/>
+        <image name="reports_button" width="400" height="400"/>
         <image name="schealth+me" width="870" height="255"/>
+        <image name="vaCards" width="400" height="400"/>
+        <image name="vaEntry" width="400" height="400"/>
+        <image name="vaHome" width="400" height="400"/>
+        <image name="vacc" width="300" height="300"/>
+        <image name="weight_button" width="400" height="400"/>
     </resources>
 </document>
