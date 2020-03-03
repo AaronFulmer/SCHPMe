@@ -9,7 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
 
+    
+    
+    
+    
     @IBOutlet weak var journalButton: UIImageView!
     
     @IBAction func goToHome(segue: UIStoryboardSegue){}
@@ -20,6 +26,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-    }
+        
+    
 }
 
+}
