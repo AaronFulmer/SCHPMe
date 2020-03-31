@@ -17,6 +17,8 @@
 		0C9726FB23D20EA800A9ED2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9726FA23D20EA800A9ED2A /* Assets.xcassets */; };
 		0C9726FE23D20EA800A9ED2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9726FC23D20EA800A9ED2A /* LaunchScreen.storyboard */; };
 		0C97270923D20EA800A9ED2A /* iOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97270823D20EA800A9ED2A /* iOSTestTests.swift */; };
+		0CAA7F7224142F53003D7F34 /* bsNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */; };
+		0CAA7F782416E013003D7F34 /* cholNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA7F772416E013003D7F34 /* cholNewEntry.swift */; };
 		3AB612AB240821E800D43BB0 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB612AA240821E800D43BB0 /* ComposeViewController.swift */; };
 		3ABAEE592406EE3200070FA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ABAEE582406EE3200070FA4 /* GoogleService-Info.plist */; };
 		3ABAEE5A2406EE3200070FA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ABAEE582406EE3200070FA4 /* GoogleService-Info.plist */; };
@@ -49,6 +51,8 @@
 		0C97270423D20EA800A9ED2A /* iOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C97270823D20EA800A9ED2A /* iOSTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestTests.swift; sourceTree = "<group>"; };
 		0C97270A23D20EA800A9ED2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bsNewEntry.swift; sourceTree = "<group>"; };
+		0CAA7F772416E013003D7F34 /* cholNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cholNewEntry.swift; sourceTree = "<group>"; };
 		0ED8F29F7D86AC07992EA163 /* Pods-iOSTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestTests.release.xcconfig"; path = "Target Support Files/Pods-iOSTestTests/Pods-iOSTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3AB612AA240821E800D43BB0 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		3ABAEE582406EE3200070FA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				0C76BE9F23D5EC800039AF99 /* Journal.swift */,
 				0C76BEA723D6147A0039AF99 /* journal_screens.swift */,
 				0C76BEA923D625FF0039AF99 /* bpNewEntry.swift */,
+				0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */,
+				0CAA7F772416E013003D7F34 /* cholNewEntry.swift */,
 			);
 			path = iOSTest;
 			sourceTree = "<group>";
@@ -321,9 +327,11 @@
 				0C76BEAA23D625FF0039AF99 /* bpNewEntry.swift in Sources */,
 				0C9726F223D20EA700A9ED2A /* AppDelegate.swift in Sources */,
 				0C9726F423D20EA700A9ED2A /* SceneDelegate.swift in Sources */,
+				0CAA7F7224142F53003D7F34 /* bsNewEntry.swift in Sources */,
 				0C76BEA023D5EC800039AF99 /* Journal.swift in Sources */,
 				0C76BEA823D6147A0039AF99 /* journal_screens.swift in Sources */,
 				3AB612AB240821E800D43BB0 /* ComposeViewController.swift in Sources */,
+				0CAA7F782416E013003D7F34 /* cholNewEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

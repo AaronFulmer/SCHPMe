@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment version="2048" identifier="iOS"/>
+        <deployment version="2064" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,8 +12,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gP4-mZ-Uyt"/>
-                        <viewControllerLayoutGuide type="bottom" id="VNx-fC-0rh"/>
+                        <viewControllerLayoutGuide type="top" id="G7M-h6-1MN"/>
+                        <viewControllerLayoutGuide type="bottom" id="aZw-Js-f5a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -69,8 +69,8 @@
             <objects>
                 <viewController id="N0a-o1-6oj" customClass="BloodPressureEntry" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ob8-vj-tX2"/>
-                        <viewControllerLayoutGuide type="bottom" id="8fe-Ja-EO4"/>
+                        <viewControllerLayoutGuide type="top" id="RMQ-wj-lUx"/>
+                        <viewControllerLayoutGuide type="bottom" id="GBY-px-irs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p8o-A0-f3j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -134,8 +134,8 @@
                                     <action selector="dateActivate:" destination="N0a-o1-6oj" eventType="editingDidBegin" id="hQw-5B-dKn"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Date Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-oe-Hlc">
-                                <rect key="frame" x="113" y="500" width="188" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Time Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-oe-Hlc">
+                                <rect key="frame" x="113" y="500" width="191" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -144,6 +144,9 @@
                             <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="On9-D3-lyX">
                                 <rect key="frame" x="117" y="550" width="179" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -227,15 +230,15 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-246.37681159420291" y="-1319.1964285714284"/>
+            <point key="canvasLocation" x="-190" y="-1372"/>
         </scene>
         <!--Journal Screens-->
         <scene sceneID="0a1-RJ-nQR">
             <objects>
                 <viewController id="nIk-kr-WsY" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JqR-Ft-lyA"/>
-                        <viewControllerLayoutGuide type="bottom" id="Auf-fk-D4a"/>
+                        <viewControllerLayoutGuide type="top" id="7sy-QG-a9G"/>
+                        <viewControllerLayoutGuide type="bottom" id="sS5-EJ-fxG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f3N-bj-BPx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -296,8 +299,8 @@
             <objects>
                 <viewController id="HVt-mw-ntS" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3Ms-L2-StD"/>
-                        <viewControllerLayoutGuide type="bottom" id="3BJ-zh-vb0"/>
+                        <viewControllerLayoutGuide type="top" id="N1J-mq-Olp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rrq-81-tPD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="52H-s7-K4v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -405,8 +408,8 @@
             <objects>
                 <viewController id="Zaz-YG-RMo" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ydv-KM-JHe"/>
-                        <viewControllerLayoutGuide type="bottom" id="G4G-ad-p6E"/>
+                        <viewControllerLayoutGuide type="top" id="qhP-1z-DCs"/>
+                        <viewControllerLayoutGuide type="bottom" id="uHD-dx-6pn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GO1-fH-Tjg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -511,8 +514,8 @@
             <objects>
                 <viewController id="N9q-6h-ksW" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TVd-Ow-ZT5"/>
-                        <viewControllerLayoutGuide type="bottom" id="CMV-nZ-XAU"/>
+                        <viewControllerLayoutGuide type="top" id="ZkG-hb-Moj"/>
+                        <viewControllerLayoutGuide type="bottom" id="cBh-Ff-heR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bch-4Z-lDb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -572,8 +575,8 @@
             <objects>
                 <viewController id="Is4-8A-8Zq" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lOW-mx-RfA"/>
-                        <viewControllerLayoutGuide type="bottom" id="dT0-Ht-4d4"/>
+                        <viewControllerLayoutGuide type="top" id="icJ-dm-hfi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cex-Gj-JyE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EaY-YW-bU3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -596,6 +599,9 @@
                                 <rect key="frame" x="87" y="485" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vCa-GG-Nce" appends="YES" id="lL5-sV-0YZ"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blood Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2OG-qa-pAp">
                                 <rect key="frame" x="223" y="52" width="171" height="35"/>
@@ -618,6 +624,11 @@
                         <action selector="gohome2:" destination="Is4-8A-8Zq" id="N4t-Eu-PGG"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="vCa-GG-Nce" userLabel="Entry Button">
+                    <connections>
+                        <segue destination="0W3-tb-Whf" kind="presentation" modalPresentationStyle="fullScreen" id="4Wg-Wp-Afu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1378" y="-607"/>
         </scene>
@@ -626,8 +637,8 @@
             <objects>
                 <viewController id="2HV-tS-2Rh" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7BJ-5e-NMq"/>
-                        <viewControllerLayoutGuide type="bottom" id="SSX-Qx-WSJ"/>
+                        <viewControllerLayoutGuide type="top" id="Y1g-Q1-dQU"/>
+                        <viewControllerLayoutGuide type="bottom" id="iwQ-hQ-Zud"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dJK-cG-x75">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -650,6 +661,9 @@
                                 <rect key="frame" x="87" y="485" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MQX-on-kNO" appends="YES" id="bU8-LI-Kiu"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cholesterol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i1Q-Xc-MsV">
                                 <rect key="frame" x="188" y="59" width="206" height="21"/>
@@ -667,9 +681,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRb-Z5-cok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="waI-Xo-h7M" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="gx0-MA-16s">
+                <tapGestureRecognizer id="gx0-MA-16s" userLabel="Home">
                     <connections>
                         <action selector="gohome2:" destination="2HV-tS-2Rh" id="ybq-Lb-VZa"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="MQX-on-kNO" userLabel="Entry Button">
+                    <connections>
+                        <segue destination="V7K-EO-b8I" kind="presentation" modalPresentationStyle="fullScreen" id="EB7-6P-34C"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -680,8 +699,8 @@
             <objects>
                 <viewController id="DTa-4u-ppB" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AqQ-Q4-VQE"/>
-                        <viewControllerLayoutGuide type="bottom" id="4HY-cp-VJg"/>
+                        <viewControllerLayoutGuide type="top" id="YWV-NA-n0w"/>
+                        <viewControllerLayoutGuide type="bottom" id="is2-RZ-RiB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WYl-ce-Hxq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -734,8 +753,8 @@
             <objects>
                 <viewController id="ixK-dm-O0a" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="W7G-9p-h99"/>
-                        <viewControllerLayoutGuide type="bottom" id="SSd-Sm-aFQ"/>
+                        <viewControllerLayoutGuide type="top" id="CSH-9g-sEG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dzo-xN-lrZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Stz-gp-h49">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -788,8 +807,8 @@
             <objects>
                 <viewController id="tjh-25-8Je" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OBd-uK-cex"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mpf-ly-82I"/>
+                        <viewControllerLayoutGuide type="top" id="gEU-fH-Caw"/>
+                        <viewControllerLayoutGuide type="bottom" id="sbr-Im-ajb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ERo-ZQ-ws7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -842,8 +861,8 @@
             <objects>
                 <viewController id="iCv-On-84K" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kKt-OE-Mnm"/>
-                        <viewControllerLayoutGuide type="bottom" id="1dp-eb-j8E"/>
+                        <viewControllerLayoutGuide type="top" id="SZq-Ns-nKa"/>
+                        <viewControllerLayoutGuide type="bottom" id="n5x-KI-ZS4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ctr-ni-Tmx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -896,8 +915,8 @@
             <objects>
                 <viewController id="cVR-MB-Wyg" customClass="ComposeViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lpo-kT-xJS"/>
-                        <viewControllerLayoutGuide type="bottom" id="FoP-ZL-v42"/>
+                        <viewControllerLayoutGuide type="top" id="mKS-go-CiN"/>
+                        <viewControllerLayoutGuide type="bottom" id="4U0-P4-hlC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="u8h-Ae-hBW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -931,7 +950,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Mms-fA-aNF" firstAttribute="leading" secondItem="u8h-Ae-hBW" secondAttribute="leading" id="12W-57-jdZ"/>
-                            <constraint firstItem="Mms-fA-aNF" firstAttribute="top" secondItem="lpo-kT-xJS" secondAttribute="bottom" id="2Nt-zY-fpN"/>
+                            <constraint firstItem="Mms-fA-aNF" firstAttribute="top" secondItem="mKS-go-CiN" secondAttribute="bottom" id="2Nt-zY-fpN"/>
                             <constraint firstAttribute="trailing" secondItem="Mms-fA-aNF" secondAttribute="trailing" id="8HO-dM-iDR"/>
                             <constraint firstAttribute="trailing" secondItem="CeA-tM-aaL" secondAttribute="trailing" id="IWB-fE-vu8"/>
                             <constraint firstItem="CeA-tM-aaL" firstAttribute="top" secondItem="Mms-fA-aNF" secondAttribute="bottom" id="SDl-Tq-Hvf"/>
@@ -952,8 +971,8 @@
             <objects>
                 <viewController title="resource" id="gjI-mZ-vhN" customClass="ComposeViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wJg-df-1zv"/>
-                        <viewControllerLayoutGuide type="bottom" id="r9g-uk-vMu"/>
+                        <viewControllerLayoutGuide type="top" id="hld-HQ-mAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="8k7-ys-HVH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S4T-wS-FPb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -984,7 +1003,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.8980392157" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="exx-a5-DqP" firstAttribute="top" secondItem="wJg-df-1zv" secondAttribute="bottom" id="8gZ-SY-AP2"/>
+                            <constraint firstItem="exx-a5-DqP" firstAttribute="top" secondItem="hld-HQ-mAu" secondAttribute="bottom" id="8gZ-SY-AP2"/>
                             <constraint firstAttribute="bottom" secondItem="exx-a5-DqP" secondAttribute="bottom" id="auY-sh-Te7"/>
                             <constraint firstItem="exx-a5-DqP" firstAttribute="leading" secondItem="S4T-wS-FPb" secondAttribute="leading" id="rmc-5K-EYG"/>
                             <constraint firstAttribute="trailing" secondItem="exx-a5-DqP" secondAttribute="trailing" id="wJO-eu-RrW"/>
@@ -1008,12 +1027,432 @@
             </objects>
             <point key="canvasLocation" x="-123.18840579710145" y="136.60714285714286"/>
         </scene>
+        <!--Blood Sugar Entry-->
+        <scene sceneID="R3Q-I3-RcX">
+            <objects>
+                <viewController id="0W3-tb-Whf" customClass="BloodSugarEntry" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RxZ-2C-LrN"/>
+                        <viewControllerLayoutGuide type="bottom" id="qPC-cu-v2G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="buf-Dd-VnS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bsHome" translatesAutoresizingMaskIntoConstraints="NO" id="EHi-zH-52F">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3Kx-fB-qjv" appends="YES" id="fIk-2x-Afa"/>
+                                </connections>
+                            </imageView>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blood Sugar Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INY-pG-4ey">
+                                <rect key="frame" x="118" y="151" width="187" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.51372549020000002" green="0.36470588240000001" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Date Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVr-Yh-geM">
+                                <rect key="frame" x="113" y="386" width="188" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.51372549020000002" green="0.36470588240000001" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NaY-H5-5cP">
+                                <rect key="frame" x="118" y="431" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="dateActivate:" destination="0W3-tb-Whf" eventType="editingDidBegin" id="Yr6-OO-Ca7"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Time Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojc-8F-W51">
+                                <rect key="frame" x="113" y="500" width="191" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.51372549020000002" green="0.36470588240000001" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9u-8S-7Mh">
+                                <rect key="frame" x="117" y="550" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="timeActivate:" destination="0W3-tb-Whf" eventType="editingDidBegin" id="8Cb-Ie-czE"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07s-Q3-n3W" userLabel="FastingToggle">
+                                <rect key="frame" x="100" y="268" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="RadioChecked"/>
+                                <connections>
+                                    <action selector="fastToggle:" destination="0W3-tb-Whf" eventType="touchUpInside" id="VEX-9D-sfQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fasting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRJ-lR-GuI">
+                                <rect key="frame" x="118" y="265" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hH9-wD-74u" appends="YES" id="lBf-UY-n6Q"/>
+                                </connections>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3S-hA-RaN" userLabel="NonfastingToggle">
+                                <rect key="frame" x="196" y="268" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="RadioUnchecked"/>
+                                <connections>
+                                    <action selector="nonfastToggle:" destination="0W3-tb-Whf" eventType="touchUpInside" id="1e9-cu-lHi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nonfasting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14z-jm-X8N">
+                                <rect key="frame" x="215" y="264" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="m4F-tL-DvU" appends="YES" id="ItV-Ll-gnq"/>
+                                </connections>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TC7-0v-UOY" userLabel="ViewDate">
+                                <rect key="frame" x="19" y="235" width="374" height="349"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="3fJ-Gd-MNo">
+                                        <rect key="frame" x="11" y="-5" width="358" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v5-n9-eHT">
+                                        <rect key="frame" x="55" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="dateCancel:" destination="0W3-tb-Whf" eventType="touchUpInside" id="8Eg-Ej-eKM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTP-5U-EBt">
+                                        <rect key="frame" x="232" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="datePicked:" destination="0W3-tb-Whf" eventType="touchUpInside" id="OwG-yp-Ba2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OYc-v7-wlJ" userLabel="ViewTime">
+                                <rect key="frame" x="19" y="235" width="374" height="349"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNw-bg-eBp">
+                                        <rect key="frame" x="55" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="timeCancel:" destination="0W3-tb-Whf" eventType="touchUpInside" id="zgU-u0-ztf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXC-4X-pjz">
+                                        <rect key="frame" x="232" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="timePicked:" destination="0W3-tb-Whf" eventType="touchUpInside" id="ze8-wG-GPv"/>
+                                        </connections>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="EHb-2f-kiF">
+                                        <rect key="frame" x="8" y="8" width="358" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Top Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zh8-80-UFz">
+                                <rect key="frame" x="122" y="207" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="txtSystolicActive:" destination="0W3-tb-Whf" eventType="editingDidBegin" id="Mqy-Tk-1Kx"/>
+                                    <action selector="txtSystolicInactive:" destination="0W3-tb-Whf" eventType="editingDidEnd" id="oW7-lk-huw"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/dL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nR-2F-acb">
+                                <rect key="frame" x="186" y="188" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.4039215686" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="date" destination="3fJ-Gd-MNo" id="Hga-hJ-iEi"/>
+                        <outlet property="radFasting" destination="07s-Q3-n3W" id="UWd-Sx-LQ0"/>
+                        <outlet property="radNonfasting" destination="h3S-hA-RaN" id="TiN-09-mLp"/>
+                        <outlet property="time" destination="EHb-2f-kiF" id="yfu-rd-pOJ"/>
+                        <outlet property="txtDateBox" destination="NaY-H5-5cP" id="wMj-yO-Pi1"/>
+                        <outlet property="txtSystolic" destination="Zh8-80-UFz" id="88u-rJ-Pgv"/>
+                        <outlet property="txtTimeBox" destination="k9u-8S-7Mh" id="zjR-Po-pbI"/>
+                        <outlet property="viewDate" destination="TC7-0v-UOY" id="d9l-2y-jqR"/>
+                        <outlet property="viewTime" destination="OYc-v7-wlJ" id="9a7-CF-Mws"/>
+                        <segue destination="xht-R1-CO6" kind="unwind" identifier="goHomeBsEntry" unwindAction="goToHomeWithSegue:" id="hvi-yD-FbQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tv-22-5Ui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xht-R1-CO6" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="3Kx-fB-qjv" userLabel="Home">
+                    <connections>
+                        <action selector="gohome:" destination="0W3-tb-Whf" id="bKb-w3-kiw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hH9-wD-74u" userLabel="Tap Fasting">
+                    <connections>
+                        <action selector="fastToggle:" destination="0W3-tb-Whf" id="xmp-t6-oLR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="m4F-tL-DvU" userLabel="Tap Nonfasting">
+                    <connections>
+                        <action selector="nonfastToggle:" destination="0W3-tb-Whf" id="cvy-Ox-RqX"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="-1372.0982142857142"/>
+        </scene>
+        <!--Cholesterol Entry-->
+        <scene sceneID="iPN-zm-WP5">
+            <objects>
+                <viewController id="V7K-EO-b8I" userLabel="Cholesterol Entry" customClass="CholesterolEntry" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tml-gv-fXn"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDb-uW-s1q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d9r-K6-45F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chHome" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-Ov-1Yl">
+                                <rect key="frame" x="10" y="44" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xDV-sW-oHt" appends="YES" id="W96-XN-PEF"/>
+                                </connections>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="scrollableAxes" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xH-jb-pGk">
+                                <rect key="frame" x="20" y="102" width="374" height="656"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Cholesterol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M00-hj-wXl">
+                                        <rect key="frame" x="227" y="42" width="83" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.95294117649999999" green="0.4431372549" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="TC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYB-Cq-tuy">
+                                        <rect key="frame" x="104" y="78" width="179" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="tcActive:" destination="V7K-EO-b8I" eventType="editingDidBegin" id="OG7-Wh-n7X"/>
+                                            <action selector="tcInactive:" destination="V7K-EO-b8I" eventType="editingDidEnd" id="4gS-Qs-7FU"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HDL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52h-Gw-bnS">
+                                        <rect key="frame" x="145" y="179" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.95294117649999999" green="0.4431372549" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="High Density Lipoprotein" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUP-4s-Gd7">
+                                        <rect key="frame" x="104" y="230" width="179" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="hdlActive:" destination="V7K-EO-b8I" eventType="editingDidBegin" id="tix-ST-IH2"/>
+                                            <action selector="hdlInactive:" destination="V7K-EO-b8I" eventType="editingDidEnd" id="dcb-Ys-Aku"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Date Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKC-OX-dVF">
+                                        <rect key="frame" x="92" y="527" width="190" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.95294117649999999" green="0.4431372549" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lHV-lx-nJD">
+                                        <rect key="frame" x="92" y="559" width="189" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="dateActivate:" destination="V7K-EO-b8I" eventType="editingDidBegin" id="QLT-jj-gTh"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Time Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oo-Xn-UtH">
+                                        <rect key="frame" x="92" y="610" width="190" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.95294117649999999" green="0.4431372549" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADJ-kP-mxN">
+                                        <rect key="frame" x="97" y="648" width="179" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="dateActivate:" destination="V7K-EO-b8I" eventType="editingDidBegin" id="rGx-U7-C6y"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Triglycerides" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0m-f4-q55">
+                                        <rect key="frame" x="146" y="312" width="83" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.95294117649999999" green="0.4431372549" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="TRIG" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dib-FO-fEo">
+                                        <rect key="frame" x="104" y="349" width="179" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="trigActive:" destination="V7K-EO-b8I" eventType="editingDidBegin" id="U9A-J1-gqF"/>
+                                            <action selector="trigInactive:" destination="V7K-EO-b8I" eventType="editingDidEnd" id="APe-NQ-Zfk"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LDL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VES-iH-YIs">
+                                        <rect key="frame" x="145" y="416" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.95294117649999999" green="0.4431372549" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Low Density Lipoprotein" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aD4-xa-Cl9">
+                                        <rect key="frame" x="104" y="467" width="179" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="ldlActive:" destination="V7K-EO-b8I" eventType="editingDidBegin" id="8cx-t0-Rk4"/>
+                                            <action selector="ldlInactive:" destination="V7K-EO-b8I" eventType="editingDidEnd" id="glQ-nz-j25"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aj9-Um-Ibx" userLabel="ViewDate">
+                                <rect key="frame" x="20" y="273" width="374" height="349"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-Ty-8ZS">
+                                        <rect key="frame" x="11" y="-5" width="358" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTD-Sk-PMa">
+                                        <rect key="frame" x="55" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="dateCancel:" destination="V7K-EO-b8I" eventType="touchUpInside" id="3jm-mZ-XXi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8g-WC-KFG">
+                                        <rect key="frame" x="232" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="datePicked:" destination="V7K-EO-b8I" eventType="touchUpInside" id="em5-DR-kjI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Sp-qK-5E9" userLabel="ViewTime">
+                                <rect key="frame" x="20" y="273" width="374" height="349"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlx-Im-UXM">
+                                        <rect key="frame" x="55" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="timeCancel:" destination="V7K-EO-b8I" eventType="touchUpInside" id="ASL-7X-hOO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEa-Nw-crF">
+                                        <rect key="frame" x="232" y="292" width="87" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="timePicked:" destination="V7K-EO-b8I" eventType="touchUpInside" id="hUw-Za-zKo"/>
+                                        </connections>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fM5-cl-wcp">
+                                        <rect key="frame" x="8" y="8" width="358" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="date" destination="rqp-Ty-8ZS" id="3Qy-3I-0SK"/>
+                        <outlet property="lbl1" destination="M00-hj-wXl" id="F7W-Os-BOy"/>
+                        <outlet property="lbl2" destination="52h-Gw-bnS" id="J7Y-L3-8Hd"/>
+                        <outlet property="lbl3" destination="V0m-f4-q55" id="cYf-EV-Lq4"/>
+                        <outlet property="lbl4" destination="VES-iH-YIs" id="RXe-v6-Fhj"/>
+                        <outlet property="lbl5" destination="eKC-OX-dVF" id="yT1-F7-m5m"/>
+                        <outlet property="lbl6" destination="5oo-Xn-UtH" id="gMN-dd-9Ra"/>
+                        <outlet property="scrollView" destination="0xH-jb-pGk" id="aRe-nV-LuN"/>
+                        <outlet property="time" destination="fM5-cl-wcp" id="ml6-yW-J7S"/>
+                        <outlet property="txtDateBox" destination="lHV-lx-nJD" id="IhD-iW-nH7"/>
+                        <outlet property="txtHDL" destination="OUP-4s-Gd7" id="AWl-Mq-YiV"/>
+                        <outlet property="txtLDL" destination="aD4-xa-Cl9" id="bD8-6S-UbQ"/>
+                        <outlet property="txtTC" destination="QYB-Cq-tuy" id="vLP-Sk-Tls"/>
+                        <outlet property="txtTRIG" destination="dib-FO-fEo" id="YUS-Y7-2rj"/>
+                        <outlet property="txtTimeBox" destination="ADJ-kP-mxN" id="r3K-SY-26D"/>
+                        <outlet property="viewDate" destination="Aj9-Um-Ibx" id="7Rp-ms-POL"/>
+                        <outlet property="viewTime" destination="2Sp-qK-5E9" id="FZb-9Y-t0d"/>
+                        <segue destination="LLU-vf-FJl" kind="unwind" identifier="goHomeBpEntry" unwindAction="goToHomeWithSegue:" id="CEh-Fr-a5K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCK-Qp-d0O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="LLU-vf-FJl" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="xDV-sW-oHt">
+                    <connections>
+                        <action selector="gohome:" destination="V7K-EO-b8I" id="r6L-cO-oO2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="1673.4375"/>
+        </scene>
     </scenes>
     <resources>
         <image name="HealthJournal" width="1203" height="244"/>
         <image name="Home" width="203" height="203"/>
         <image name="Home Button" width="300" height="300"/>
         <image name="Journal" width="100" height="100"/>
+        <image name="RadioChecked" width="1024" height="1024"/>
+        <image name="RadioUnchecked" width="512" height="512"/>
         <image name="Resources" width="300" height="300"/>
         <image name="alCards" width="1499" height="1500"/>
         <image name="alEntry" width="1499" height="1500"/>

@@ -2,24 +2,28 @@
 //  ViewController.swift
 //  iOSTest
 //
-//  Created by Aaron Fulmer on 1/17/20.
+//  Created by Aaron Fulmer on 3/7/20.
 //  Copyright © 2020 Aaron Fulmer. All rights reserved.
 //
 
 import UIKit
 
-class BloodPressureEntry: UIViewController {
+class BloodSugarEntry: UIViewController {
 
+    
     @IBOutlet weak var txtSystolic: UITextField!
-    @IBOutlet weak var txtDiastolic: UITextField!
     @IBOutlet var layer: CALayer!
-    @IBOutlet var layer2: CALayer!
+    //@IBOutlet var layer2: CALayer!
+    @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var viewDate: UIView!
     @IBOutlet weak var viewTime: UIView!
-    @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var time: UIDatePicker!
     @IBOutlet weak var txtDateBox: UITextField!
     @IBOutlet weak var txtTimeBox: UITextField!
+    @IBOutlet weak var radFasting: UIButton!
+    @IBOutlet weak var radNonfasting: UIButton!
+    let checkedImage = UIImage(named: "RadioChecked")
+    let uncheckedImage = UIImage(named: "RadioUnchecked")
     var dateString: String!
     var timeString: String!
     
@@ -31,7 +35,7 @@ class BloodPressureEntry: UIViewController {
     
     @IBAction func gohome(_ sender: Any) {
         
-        performSegue(withIdentifier: "goHomeBpEntry", sender: self)
+        performSegue(withIdentifier: "goHomeBsEntry", sender: self)
     }
     
     
@@ -47,15 +51,7 @@ class BloodPressureEntry: UIViewController {
     }
     
     
-    @IBAction func txtDiastolicActive(_ sender: Any) {
-        layer2.frame = CGRect(origin: CGPoint(x: 0, y:txtDiastolic.frame.height), size: CGSize(width: txtDiastolic.frame.width, height:  2))
-        txtDiastolic.layer.addSublayer(layer2)
-    }
     
-    
-    @IBAction func txtDiastolicInactive(_ sender: Any) {
-        layer2.removeFromSuperlayer()
-    }
     
     
     @IBAction func dateActivate(_ sender: Any) {
@@ -80,6 +76,14 @@ class BloodPressureEntry: UIViewController {
         txtDateBox.isEnabled = true
     }
     
+    @IBAction func fastToggle(_ sender: Any) {
+        radFasting.setImage(checkedImage, for: UIControl.State.normal)
+        radNonfasting.setImage(uncheckedImage, for: UIControl.State.normal)
+    }
+    @IBAction func nonfastToggle(_ sender: Any) {
+        radFasting.setImage(uncheckedImage, for: UIControl.State.normal)
+        radNonfasting.setImage(checkedImage, for: UIControl.State.normal)
+    }
     @IBAction func timeActivate(_ sender: Any) {
         viewTime.isHidden = false
         viewTime.isExclusiveTouch = true
@@ -111,19 +115,15 @@ class BloodPressureEntry: UIViewController {
         txtSystolic.borderStyle = UITextField.BorderStyle.none
         txtSystolic.layer.addSublayer(bottomLine)
         
-        bottomLine = CALayer()
-        bottomLine.frame = CGRect(origin: CGPoint(x: 0, y:txtDiastolic.frame.height), size: CGSize(width: txtDiastolic.frame.width, height:  1))
-        bottomLine.backgroundColor = UIColor(red: 28/255.0, green: 103/255.0, blue: 106/255.0, alpha: 1.0).cgColor
-        txtDiastolic.borderStyle = UITextField.BorderStyle.none
-        txtDiastolic.layer.addSublayer(bottomLine)
+    
         
         bottomLine = CALayer()
-        bottomLine.frame = CGRect(origin: CGPoint(x: 0, y:txtDateBox.frame.height), size: CGSize(width: txtDiastolic.frame.width, height:  1))
+        bottomLine.frame = CGRect(origin: CGPoint(x: 0, y:txtDateBox.frame.height), size: CGSize(width: txtSystolic.frame.width, height:  1))
         bottomLine.backgroundColor = UIColor(red: 28/255.0, green: 103/255.0, blue: 106/255.0, alpha: 1.0).cgColor
         txtDateBox.layer.addSublayer(bottomLine)
         
         bottomLine = CALayer()
-        bottomLine.frame = CGRect(origin: CGPoint(x: 0, y:txtTimeBox.frame.height), size: CGSize(width: txtDiastolic.frame.width, height:  1))
+        bottomLine.frame = CGRect(origin: CGPoint(x: 0, y:txtTimeBox.frame.height), size: CGSize(width: txtSystolic.frame.width, height:  1))
         bottomLine.backgroundColor = UIColor(red: 28/255.0, green: 103/255.0, blue: 106/255.0, alpha: 1.0).cgColor
         txtTimeBox.layer.addSublayer(bottomLine)
         
@@ -139,8 +139,6 @@ class BloodPressureEntry: UIViewController {
         layer = CALayer()
         layer.backgroundColor = UIColor(red: 28/255.0, green: 103/255.0, blue: 106/255.0, alpha: 1.0).cgColor
         
-        layer2 = CALayer()
-        layer2.backgroundColor = UIColor(red: 28/255.0, green: 103/255.0, blue: 106/255.0, alpha: 1.0).cgColor
         
     }
    
