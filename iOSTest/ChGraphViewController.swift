@@ -12,7 +12,8 @@ import Foundation
 import UIKit
 import Charts
 
-class CholesterolChartsViewController: UIViewController {
+class ChChartsViewController: UIViewController {
+    
     
     @IBOutlet weak var ChChartView: LineChartView!
     
@@ -43,21 +44,21 @@ class CholesterolChartsViewController: UIViewController {
         LDLSet.lineWidth = 3
         LDLSet.highlightColor = UIColor(red: 218.0/255.0, green: 160.0/255.0, blue: 59.0/255.0, alpha: 1.0)
         LDLSet.circleColors = [NSUIColor.init(red: 218.0/255.0, green: 160.0/255.0, blue: 59.0/255.0, alpha: 1.0)]
-        
-        
+
+
         TRIGSet.colors = [NSUIColor.init(red: 181.0/255.0, green: 101.0/255.0, blue: 29.0/255.0, alpha: 1.0)]
         TRIGSet.lineWidth = 3
         TRIGSet.highlightColor = UIColor(red: 181.0/255.0, green: 101.0/255.0, blue: 29.0/255.0, alpha: 1.0)
         TRIGSet.circleColors = [NSUIColor.init(red: 181.0/255.0, green: 101.0/255.0, blue: 29.0/255.0, alpha: 1.0)]
         TRIGSet.lineDashLengths = [2, 3]
-        
-        
+
+
         TCSet.colors = [NSUIColor.init(red: 218.0/255.0, green: 160.0/255.0, blue: 59.0/255.0, alpha: 1.0)]
         TCSet.lineWidth = 3
         TCSet.highlightColor = UIColor(red: 218.0/255.0, green: 160.0/255.0, blue: 59.0/255.0, alpha: 1.0)
         TCSet.circleColors = [NSUIColor.init(red: 218.0/255.0, green: 160.0/255.0, blue: 59.0/255.0, alpha: 1.0)]
         TCSet.lineDashLengths = [2, 3]
-        
+
        // Plots data on chart
         let ChData = LineChartData(dataSets: [HDLSet, LDLSet, TRIGSet, TCSet])
         // Line below removes values above circles
@@ -75,25 +76,24 @@ class CholesterolChartsViewController: UIViewController {
     
     // Dummy data
     let HDLValues: [ChartDataEntry] = [
-        ChartDataEntry(x: 1.0, y: 11.0),
-        ChartDataEntry(x: 2.0, y: 15.0),
-        ChartDataEntry(x: 3.0, y: 4.0)
-    ]
+        ChartDataEntry(x: 1.0, y: 5.0),
+        ChartDataEntry(x: 2.0, y: 7.0),
+        ChartDataEntry(x: 3.0, y: 4.0)]
     
     let LDLValues: [ChartDataEntry] = [
-        ChartDataEntry(x: 12.0, y: 14.0),
-        ChartDataEntry(x: 5.0, y: 10.0),
-        ChartDataEntry(x: 6.0, y: 14.0)]
-    
+        ChartDataEntry(x: 1.0, y: 14.0),
+        ChartDataEntry(x: 2.0, y: 10.0),
+        ChartDataEntry(x: 3.0, y: 14.0)]
+
     let TRIGValues: [ChartDataEntry] = [
-        ChartDataEntry(x: 15.0, y: 7.0),
-        ChartDataEntry(x: 10.0, y: 9.0),
-        ChartDataEntry(x: 2.0, y: 8.0)]
-    
+        ChartDataEntry(x: 1.0, y: 7.0),
+        ChartDataEntry(x: 2.0, y: 9.0),
+        ChartDataEntry(x: 3.0, y: 8.0)]
+
     let TCValues: [ChartDataEntry] = [
-        ChartDataEntry(x: 10.0, y: 5.0),
-        ChartDataEntry(x: 3.0, y: 11.0),
-        ChartDataEntry(x: 4.0, y: 19.0)]
-    
+        ChartDataEntry(x: 1.0, y: 5.0),
+        ChartDataEntry(x: 2.0, y: 11.0),
+        ChartDataEntry(x: 3.0, y: 19.0)]
+
     
 }

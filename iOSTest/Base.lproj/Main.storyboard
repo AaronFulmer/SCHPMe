@@ -793,7 +793,7 @@
                 <exit id="waI-Xo-h7M" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="13a-fl-PRZ">
                     <connections>
-                        <segue destination="dff-5j-grB" kind="presentation" modalPresentationStyle="fullScreen" id="ZNv-OF-Qkp"/>
+                        <segue destination="Tma-Wj-dDp" kind="presentation" modalPresentationStyle="fullScreen" id="jYV-K3-Wfy"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1219,7 +1219,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bwHome" translatesAutoresizingMaskIntoConstraints="NO" id="dsW-eD-hI6">
-                                <rect key="frame" x="20" y="-137.66666666666666" width="50.000000000000114" height="400.33333333333326"/>
+                                <rect key="frame" x="20" y="-137.66666666666666" width="50" height="400.33333333333326"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="759-do-g0T"/>
@@ -1272,40 +1272,40 @@
             </objects>
             <point key="canvasLocation" x="2484" y="-1319"/>
         </scene>
-        <!--Charts View Controller-->
-        <scene sceneID="eOA-WR-Lwi">
+        <!--Ch Charts View Controller-->
+        <scene sceneID="pbQ-wU-7yD">
             <objects>
-                <viewController id="dff-5j-grB" userLabel="Charts View Controller" customClass="CholesterolChartsViewController" sceneMemberID="viewController">
+                <viewController id="Tma-Wj-dDp" customClass="ChChartsViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8eG-p7-Lf0"/>
-                        <viewControllerLayoutGuide type="bottom" id="c4d-K1-WXZ"/>
+                        <viewControllerLayoutGuide type="top" id="eEP-bW-VkX"/>
+                        <viewControllerLayoutGuide type="bottom" id="uAw-2s-oxB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vht-dl-dC3">
+                    <view key="view" contentMode="scaleToFill" id="DqL-pG-Itc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chHome" translatesAutoresizingMaskIntoConstraints="NO" id="iiW-MH-JbF">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chHome" translatesAutoresizingMaskIntoConstraints="NO" id="Cnx-DV-zCD">
                                 <rect key="frame" x="20" y="-137.66666666666666" width="50" height="400.33333333333326"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="gcO-km-9rx"/>
-                                    <constraint firstAttribute="height" constant="400.33333333333331" id="lR3-1e-fHp"/>
+                                    <constraint firstAttribute="height" constant="400.33333333333331" id="7i5-pl-cuP"/>
+                                    <constraint firstAttribute="width" constant="50" id="TLG-Iz-wdm"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="fbT-fz-Gap" appends="YES" id="AsZ-s5-IUa"/>
+                                    <outletCollection property="gestureRecognizers" destination="crj-gY-rks" appends="YES" id="fUa-Hy-UMV"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cholesterol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lpv-0m-6uv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cholesterol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="P2u-0u-3QK">
                                 <rect key="frame" x="237.66666666666663" y="52" width="156.33333333333337" height="38"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="IZA-H9-CeC"/>
+                                    <constraint firstAttribute="height" constant="38" id="YM8-NZ-eLT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" red="0.85490196078431369" green="0.62745098039215685" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKP-UC-0qO" userLabel="Cholesterol Chart View" customClass="LineChartView" customModule="Charts">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9B1-2e-WCY" userLabel="Ch Chart View" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="20" y="122" width="374" height="547"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -1313,30 +1313,30 @@
                         <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="iiW-MH-JbF" firstAttribute="leading" secondItem="iKP-UC-0qO" secondAttribute="leading" id="0FQ-Kv-7Vv"/>
-                            <constraint firstItem="Lpv-0m-6uv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iiW-MH-JbF" secondAttribute="trailing" constant="8" symbolic="YES" id="4Vg-CO-v6S"/>
-                            <constraint firstItem="Lpv-0m-6uv" firstAttribute="trailing" secondItem="iKP-UC-0qO" secondAttribute="trailing" id="6GB-nP-GHR"/>
-                            <constraint firstItem="iiW-MH-JbF" firstAttribute="centerY" secondItem="Lpv-0m-6uv" secondAttribute="centerY" constant="-8.5000000000000284" id="JTh-82-R1q"/>
-                            <constraint firstItem="iKP-UC-0qO" firstAttribute="leading" secondItem="vht-dl-dC3" secondAttribute="leadingMargin" id="Toe-QD-8iA"/>
-                            <constraint firstItem="Lpv-0m-6uv" firstAttribute="top" secondItem="8eG-p7-Lf0" secondAttribute="bottom" constant="8" symbolic="YES" id="fCH-Tg-sg1"/>
-                            <constraint firstItem="Lpv-0m-6uv" firstAttribute="trailing" secondItem="vht-dl-dC3" secondAttribute="trailingMargin" id="gBF-Re-6f1"/>
-                            <constraint firstItem="c4d-K1-WXZ" firstAttribute="top" secondItem="iKP-UC-0qO" secondAttribute="bottom" constant="193" id="m0U-Tl-2rQ"/>
-                            <constraint firstItem="iKP-UC-0qO" firstAttribute="top" secondItem="Lpv-0m-6uv" secondAttribute="bottom" constant="32" id="t5p-Hx-ay2"/>
+                            <constraint firstItem="P2u-0u-3QK" firstAttribute="trailing" secondItem="DqL-pG-Itc" secondAttribute="trailingMargin" id="2Dn-pC-M8K"/>
+                            <constraint firstItem="P2u-0u-3QK" firstAttribute="top" secondItem="eEP-bW-VkX" secondAttribute="bottom" constant="8" symbolic="YES" id="4kv-8w-eTU"/>
+                            <constraint firstItem="uAw-2s-oxB" firstAttribute="top" secondItem="9B1-2e-WCY" secondAttribute="bottom" constant="193" id="GxV-ge-A8j"/>
+                            <constraint firstItem="Cnx-DV-zCD" firstAttribute="centerY" secondItem="P2u-0u-3QK" secondAttribute="centerY" constant="-8.5000000000000284" id="KzK-SP-jU0"/>
+                            <constraint firstItem="P2u-0u-3QK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cnx-DV-zCD" secondAttribute="trailing" constant="8" symbolic="YES" id="X6m-JQ-pGc"/>
+                            <constraint firstItem="9B1-2e-WCY" firstAttribute="top" secondItem="P2u-0u-3QK" secondAttribute="bottom" constant="32" id="ZBT-2S-Nzt"/>
+                            <constraint firstItem="9B1-2e-WCY" firstAttribute="leading" secondItem="DqL-pG-Itc" secondAttribute="leadingMargin" id="hi3-gn-G41"/>
+                            <constraint firstItem="Cnx-DV-zCD" firstAttribute="leading" secondItem="9B1-2e-WCY" secondAttribute="leading" id="ylf-X8-SU9"/>
+                            <constraint firstItem="P2u-0u-3QK" firstAttribute="trailing" secondItem="9B1-2e-WCY" secondAttribute="trailing" id="zMJ-gs-yrF"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ChChartView" destination="iKP-UC-0qO" id="eSV-UD-JU9"/>
+                        <outlet property="ChChartView" destination="9B1-2e-WCY" id="VVy-RU-fDv"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S2d-kZ-Quc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="EaD-3g-PM4" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="fbT-fz-Gap" userLabel="Home">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwq-9A-EIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7rl-9f-DuP" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="crj-gY-rks" userLabel="Home">
                     <connections>
-                        <segue destination="EaD-3g-PM4" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="emq-MR-a2w"/>
+                        <segue destination="7rl-9f-DuP" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="Stn-vm-2Eb"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-586" y="846"/>
+            <point key="canvasLocation" x="-488" y="830"/>
         </scene>
     </scenes>
     <resources>
