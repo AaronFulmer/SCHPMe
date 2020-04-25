@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseDatabase
 
+import Firebase
+
 class ComposeViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
@@ -42,6 +44,7 @@ class ComposeViewController: UIViewController {
             
             // Set the firebase reference
             ref = Database.database().reference()
+        
             
         
         

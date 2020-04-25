@@ -17,10 +17,15 @@
 		0C9726FB23D20EA800A9ED2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9726FA23D20EA800A9ED2A /* Assets.xcassets */; };
 		0C9726FE23D20EA800A9ED2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9726FC23D20EA800A9ED2A /* LaunchScreen.storyboard */; };
 		0C97270923D20EA800A9ED2A /* iOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97270823D20EA800A9ED2A /* iOSTestTests.swift */; };
+    0CAA7F7224142F53003D7F34 /* bsNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */; };
+		0CAA7F782416E013003D7F34 /* cholNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA7F772416E013003D7F34 /* cholNewEntry.swift */; };
 		3A940F0324539AB00082D0FD /* BSGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A940F0224539AB00082D0FD /* BSGraphViewController.swift */; };
 		3A940F052453A6AF0082D0FD /* BWGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A940F042453A6AF0082D0FD /* BWGraphViewController.swift */; };
 		3A940F072453AC1C0082D0FD /* ChGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A940F062453AC1C0082D0FD /* ChGraphViewController.swift */; };
 		3A956A8B24229DC000F4875C /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3A956A8A24229DC000F4875C /* SQLite */; };
+
+		
+
 		3AB612AB240821E800D43BB0 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB612AA240821E800D43BB0 /* ComposeViewController.swift */; };
 		3ABAEE592406EE3200070FA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ABAEE582406EE3200070FA4 /* GoogleService-Info.plist */; };
 		3ABAEE5A2406EE3200070FA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ABAEE582406EE3200070FA4 /* GoogleService-Info.plist */; };
@@ -54,6 +59,8 @@
 		0C97270423D20EA800A9ED2A /* iOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C97270823D20EA800A9ED2A /* iOSTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestTests.swift; sourceTree = "<group>"; };
 		0C97270A23D20EA800A9ED2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bsNewEntry.swift; sourceTree = "<group>"; };
+		0CAA7F772416E013003D7F34 /* cholNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cholNewEntry.swift; sourceTree = "<group>"; };
 		0ED8F29F7D86AC07992EA163 /* Pods-iOSTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestTests.release.xcconfig"; path = "Target Support Files/Pods-iOSTestTests/Pods-iOSTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A940F0224539AB00082D0FD /* BSGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSGraphViewController.swift; sourceTree = "<group>"; };
 		3A940F042453A6AF0082D0FD /* BWGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWGraphViewController.swift; sourceTree = "<group>"; };
@@ -124,10 +131,15 @@
 				0C76BE9F23D5EC800039AF99 /* Journal.swift */,
 				0C76BEA723D6147A0039AF99 /* journal_screens.swift */,
 				0C76BEA923D625FF0039AF99 /* bpNewEntry.swift */,
+        0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */,
+				0CAA7F772416E013003D7F34 /* cholNewEntry.swift */,
 				3AE853962422B75600C7690E /* BPGraphViewController.swift */,
 				3A940F0224539AB00082D0FD /* BSGraphViewController.swift */,
 				3A940F042453A6AF0082D0FD /* BWGraphViewController.swift */,
 				3A940F062453AC1C0082D0FD /* ChGraphViewController.swift */,
+
+				
+
 			);
 			path = iOSTest;
 			sourceTree = "<group>";
@@ -361,11 +373,16 @@
 				0C9726F223D20EA700A9ED2A /* AppDelegate.swift in Sources */,
 				3A940F072453AC1C0082D0FD /* ChGraphViewController.swift in Sources */,
 				0C9726F423D20EA700A9ED2A /* SceneDelegate.swift in Sources */,
+				0CAA7F7224142F53003D7F34 /* bsNewEntry.swift in Sources */,
 				0C76BEA023D5EC800039AF99 /* Journal.swift in Sources */,
 				0C76BEA823D6147A0039AF99 /* journal_screens.swift in Sources */,
-				3AB612AB240821E800D43BB0 /* ComposeViewController.swift in Sources */,
+				0CAA7F782416E013003D7F34 /* cholNewEntry.swift in Sources */,
+        3AB612AB240821E800D43BB0 /* ComposeViewController.swift in Sources */,
 				3A940F052453A6AF0082D0FD /* BWGraphViewController.swift in Sources */,
 				3A940F0324539AB00082D0FD /* BSGraphViewController.swift in Sources */,
+
+				
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

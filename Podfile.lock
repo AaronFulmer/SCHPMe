@@ -1,7 +1,9 @@
 PODS:
+
   - Charts (3.4.0):
     - Charts/Core (= 3.4.0)
   - Charts/Core (3.4.0)
+
   - Firebase/Analytics (6.18.0):
     - Firebase/Core
   - Firebase/Auth (6.18.0):
@@ -101,6 +103,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Charts
+
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -118,10 +121,12 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+
     - SQLite.swift
 
 SPEC CHECKSUMS:
   Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+
   Firebase: 0490eca762a72e4f1582319539153897f1508dee
   FirebaseAnalytics: 058d71e714a1a6804d9e0f25e3bb18e377a51579
   FirebaseAuth: 5ce2b03a3d7fe56b7a6e4c5ec7ff1522890b1d6f
@@ -139,8 +144,10 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
 
 PODFILE CHECKSUM: 7f6df63bbbaedc5cc4ef5a1561f634798e90dd36
 
 COCOAPODS: 1.9.1
+
