@@ -1,7 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-workspace 'iOSTest'
 
 target 'iOSTest' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -9,9 +8,14 @@ target 'iOSTest' do
 
   # Pods for iOSTest
 
+    pod 'Charts'
+
   target 'iOSTestTests' do
     inherit! :search_paths
-    # Pods for testing
+   
+ # Pods for testing
+    pod 'SQLite.swift', '~> 0.12.0'
+
   end
 
 # add the Firebase pod for Google Analytics

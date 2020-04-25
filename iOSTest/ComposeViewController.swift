@@ -8,7 +8,9 @@
 
 import UIKit
 import FirebaseDatabase
+
 import Firebase
+
 class ComposeViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!

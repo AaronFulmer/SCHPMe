@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,11 +17,19 @@
 		0C9726FB23D20EA800A9ED2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9726FA23D20EA800A9ED2A /* Assets.xcassets */; };
 		0C9726FE23D20EA800A9ED2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9726FC23D20EA800A9ED2A /* LaunchScreen.storyboard */; };
 		0C97270923D20EA800A9ED2A /* iOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97270823D20EA800A9ED2A /* iOSTestTests.swift */; };
-		0CAA7F7224142F53003D7F34 /* bsNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */; };
+    0CAA7F7224142F53003D7F34 /* bsNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */; };
 		0CAA7F782416E013003D7F34 /* cholNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA7F772416E013003D7F34 /* cholNewEntry.swift */; };
+		3A940F0324539AB00082D0FD /* BSGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A940F0224539AB00082D0FD /* BSGraphViewController.swift */; };
+		3A940F052453A6AF0082D0FD /* BWGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A940F042453A6AF0082D0FD /* BWGraphViewController.swift */; };
+		3A940F072453AC1C0082D0FD /* ChGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A940F062453AC1C0082D0FD /* ChGraphViewController.swift */; };
+		3A956A8B24229DC000F4875C /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3A956A8A24229DC000F4875C /* SQLite */; };
+
+		
+
 		3AB612AB240821E800D43BB0 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB612AA240821E800D43BB0 /* ComposeViewController.swift */; };
 		3ABAEE592406EE3200070FA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ABAEE582406EE3200070FA4 /* GoogleService-Info.plist */; };
 		3ABAEE5A2406EE3200070FA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ABAEE582406EE3200070FA4 /* GoogleService-Info.plist */; };
+		3AE853972422B75600C7690E /* BPGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE853962422B75600C7690E /* BPGraphViewController.swift */; };
 		878F3174BF100ADC363A238F /* Pods_iOSTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFECB3ADA74D5A4C4C1B81D /* Pods_iOSTestTests.framework */; };
 		C04093BCEB5F714F63E66117 /* Pods_iOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6437EF905945AF9315EB40E0 /* Pods_iOSTest.framework */; };
 /* End PBXBuildFile section */
@@ -54,8 +62,12 @@
 		0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bsNewEntry.swift; sourceTree = "<group>"; };
 		0CAA7F772416E013003D7F34 /* cholNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cholNewEntry.swift; sourceTree = "<group>"; };
 		0ED8F29F7D86AC07992EA163 /* Pods-iOSTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestTests.release.xcconfig"; path = "Target Support Files/Pods-iOSTestTests/Pods-iOSTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A940F0224539AB00082D0FD /* BSGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSGraphViewController.swift; sourceTree = "<group>"; };
+		3A940F042453A6AF0082D0FD /* BWGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWGraphViewController.swift; sourceTree = "<group>"; };
+		3A940F062453AC1C0082D0FD /* ChGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChGraphViewController.swift; sourceTree = "<group>"; };
 		3AB612AA240821E800D43BB0 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		3ABAEE582406EE3200070FA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3AE853962422B75600C7690E /* BPGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPGraphViewController.swift; sourceTree = "<group>"; };
 		4DFECB3ADA74D5A4C4C1B81D /* Pods_iOSTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6437EF905945AF9315EB40E0 /* Pods_iOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		689107DD57972B194C9506B8 /* Pods-iOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.debug.xcconfig"; path = "Target Support Files/Pods-iOSTest/Pods-iOSTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A956A8B24229DC000F4875C /* SQLite in Frameworks */,
 				C04093BCEB5F714F63E66117 /* Pods_iOSTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,8 +131,15 @@
 				0C76BE9F23D5EC800039AF99 /* Journal.swift */,
 				0C76BEA723D6147A0039AF99 /* journal_screens.swift */,
 				0C76BEA923D625FF0039AF99 /* bpNewEntry.swift */,
-				0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */,
+        0CAA7F7124142F53003D7F34 /* bsNewEntry.swift */,
 				0CAA7F772416E013003D7F34 /* cholNewEntry.swift */,
+				3AE853962422B75600C7690E /* BPGraphViewController.swift */,
+				3A940F0224539AB00082D0FD /* BSGraphViewController.swift */,
+				3A940F042453A6AF0082D0FD /* BWGraphViewController.swift */,
+				3A940F062453AC1C0082D0FD /* ChGraphViewController.swift */,
+
+				
+
 			);
 			path = iOSTest;
 			sourceTree = "<group>";
@@ -171,6 +191,9 @@
 			dependencies = (
 			);
 			name = iOSTest;
+			packageProductDependencies = (
+				3A956A8A24229DC000F4875C /* SQLite */,
+			);
 			productName = iOSTest;
 			productReference = 0C9726EE23D20EA700A9ED2A /* iOSTest.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +206,7 @@
 				0C97270023D20EA800A9ED2A /* Sources */,
 				0C97270123D20EA800A9ED2A /* Frameworks */,
 				0C97270223D20EA800A9ED2A /* Resources */,
+				F52694EA7912C614CB8F707A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 0C9726E523D20EA700A9ED2A;
+			packageReferences = (
+				3A956A8924229DC000F4875C /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = 0C9726EF23D20EA700A9ED2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -316,6 +343,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F52694EA7912C614CB8F707A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSTestTests/Pods-iOSTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSTestTests/Pods-iOSTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSTestTests/Pods-iOSTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -324,14 +368,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C9726F623D20EA700A9ED2A /* HomeScreen.swift in Sources */,
+				3AE853972422B75600C7690E /* BPGraphViewController.swift in Sources */,
 				0C76BEAA23D625FF0039AF99 /* bpNewEntry.swift in Sources */,
 				0C9726F223D20EA700A9ED2A /* AppDelegate.swift in Sources */,
+				3A940F072453AC1C0082D0FD /* ChGraphViewController.swift in Sources */,
 				0C9726F423D20EA700A9ED2A /* SceneDelegate.swift in Sources */,
 				0CAA7F7224142F53003D7F34 /* bsNewEntry.swift in Sources */,
 				0C76BEA023D5EC800039AF99 /* Journal.swift in Sources */,
 				0C76BEA823D6147A0039AF99 /* journal_screens.swift in Sources */,
-				3AB612AB240821E800D43BB0 /* ComposeViewController.swift in Sources */,
 				0CAA7F782416E013003D7F34 /* cholNewEntry.swift in Sources */,
+        3AB612AB240821E800D43BB0 /* ComposeViewController.swift in Sources */,
+				3A940F052453A6AF0082D0FD /* BWGraphViewController.swift in Sources */,
+				3A940F0324539AB00082D0FD /* BSGraphViewController.swift in Sources */,
+
+				
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +651,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A956A8924229DC000F4875C /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A956A8A24229DC000F4875C /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A956A8924229DC000F4875C /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C9726E623D20EA700A9ED2A /* Project object */;
 }
