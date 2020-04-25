@@ -12,8 +12,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gP4-mZ-Uyt"/>
-                        <viewControllerLayoutGuide type="bottom" id="VNx-fC-0rh"/>
+                        <viewControllerLayoutGuide type="top" id="nql-Lc-mPd"/>
+                        <viewControllerLayoutGuide type="bottom" id="kn5-bJ-r44"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -69,8 +69,8 @@
             <objects>
                 <viewController id="N0a-o1-6oj" customClass="BloodPressureEntry" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ob8-vj-tX2"/>
-                        <viewControllerLayoutGuide type="bottom" id="8fe-Ja-EO4"/>
+                        <viewControllerLayoutGuide type="top" id="la9-0A-RZx"/>
+                        <viewControllerLayoutGuide type="bottom" id="vsn-dk-ehB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p8o-A0-f3j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -229,13 +229,121 @@
             </objects>
             <point key="canvasLocation" x="-246.37681159420291" y="-1319.1964285714284"/>
         </scene>
+        <!--Charts View Controller-->
+        <scene sceneID="Wu7-NF-d2n">
+            <objects>
+                <viewController id="lwY-v7-lr4" customClass="BPChartsViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Qb-bn-fgo"/>
+                        <viewControllerLayoutGuide type="bottom" id="g2d-mT-1jD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i93-0H-2zS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bpHome" translatesAutoresizingMaskIntoConstraints="NO" id="z5r-Pe-Zyg">
+                                <rect key="frame" x="20" y="-137.66666666666666" width="50" height="400.33333333333326"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Dl8-ip-M4M"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JO5-Lb-1Wz" appends="YES" id="WM9-gW-6RB"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Fcv-dt-CfB">
+                                <rect key="frame" x="190" y="52" width="204" height="21"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="oJv-Jp-zer"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1to-gG-0IP">
+                                <rect key="frame" x="249" y="698" width="94" height="30"/>
+                                <state key="normal" title="Enter Systolic"/>
+                                <connections>
+                                    <action selector="sysButton:" destination="lwY-v7-lr4" eventType="touchUpInside" id="8rv-0W-tFO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyB-xS-V2q">
+                                <rect key="frame" x="249" y="757" width="99" height="30"/>
+                                <state key="normal" title="Enter Diastolic"/>
+                                <connections>
+                                    <action selector="diaButton:" destination="Pax-zy-pbT" eventType="touchUpInside" id="6bk-Gq-AgF"/>
+                                    <action selector="diaButton:" destination="lwY-v7-lr4" eventType="touchUpInside" id="rew-es-KwU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7SE-Su-UME" userLabel="Systolic Text Box">
+                                <rect key="frame" x="66" y="698" width="97" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="sysTextBox:" destination="Pax-zy-pbT" eventType="editingDidEnd" id="hcl-g0-wkW"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2W8-Hx-sdP" userLabel="Diastolic Text Box">
+                                <rect key="frame" x="131" y="757" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="diaTextBox:" destination="Pax-zy-pbT" eventType="editingDidEnd" id="jbP-Hf-GYE"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-oR-21o" userLabel="BP Chart View" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="122" width="374" height="547"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1to-gG-0IP" secondAttribute="trailing" constant="71" id="0d6-Sq-ro0"/>
+                            <constraint firstItem="cyB-xS-V2q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1to-gG-0IP" secondAttribute="leading" id="2hf-AQ-h75"/>
+                            <constraint firstItem="Fcv-dt-CfB" firstAttribute="top" secondItem="8Qb-bn-fgo" secondAttribute="bottom" constant="8" id="5OL-6R-9mk"/>
+                            <constraint firstItem="Fcv-dt-CfB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="z5r-Pe-Zyg" secondAttribute="trailing" constant="8" symbolic="YES" id="9at-Er-bUe"/>
+                            <constraint firstItem="7SE-Su-UME" firstAttribute="leading" secondItem="i93-0H-2zS" secondAttribute="leadingMargin" constant="46" id="Da1-w0-al9"/>
+                            <constraint firstItem="7SE-Su-UME" firstAttribute="trailing" secondItem="2W8-Hx-sdP" secondAttribute="trailing" id="ETh-ES-THh"/>
+                            <constraint firstItem="qaT-oR-21o" firstAttribute="trailing" secondItem="Fcv-dt-CfB" secondAttribute="trailing" id="IaP-Vv-mkR"/>
+                            <constraint firstItem="Fcv-dt-CfB" firstAttribute="trailing" secondItem="i93-0H-2zS" secondAttribute="trailingMargin" id="Iip-vC-ZVm"/>
+                            <constraint firstItem="z5r-Pe-Zyg" firstAttribute="leading" secondItem="i93-0H-2zS" secondAttribute="leadingMargin" id="Laq-9q-YCR"/>
+                            <constraint firstItem="cyB-xS-V2q" firstAttribute="leading" secondItem="2W8-Hx-sdP" secondAttribute="trailing" constant="86" id="Nmm-v6-ZMg"/>
+                            <constraint firstItem="qaT-oR-21o" firstAttribute="top" secondItem="Fcv-dt-CfB" secondAttribute="bottom" constant="49" id="Txw-Tn-Apy"/>
+                            <constraint firstItem="cyB-xS-V2q" firstAttribute="top" secondItem="2W8-Hx-sdP" secondAttribute="top" id="UMd-qR-KSH"/>
+                            <constraint firstItem="qaT-oR-21o" firstAttribute="leading" secondItem="z5r-Pe-Zyg" secondAttribute="leading" id="UX6-xb-DME"/>
+                            <constraint firstItem="g2d-mT-1jD" firstAttribute="top" secondItem="cyB-xS-V2q" secondAttribute="bottom" constant="75" id="aCh-fW-4IE"/>
+                            <constraint firstItem="7SE-Su-UME" firstAttribute="top" secondItem="1to-gG-0IP" secondAttribute="top" id="hpb-03-ewK"/>
+                            <constraint firstItem="cyB-xS-V2q" firstAttribute="top" secondItem="1to-gG-0IP" secondAttribute="bottom" constant="29" id="j6P-ow-P8M"/>
+                            <constraint firstItem="z5r-Pe-Zyg" firstAttribute="centerY" secondItem="Fcv-dt-CfB" secondAttribute="centerY" id="teQ-zV-zt6"/>
+                            <constraint firstItem="7SE-Su-UME" firstAttribute="top" secondItem="qaT-oR-21o" secondAttribute="bottom" constant="29" id="twW-1S-tiX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cyB-xS-V2q" secondAttribute="trailing" constant="46" id="yL4-Q1-Yzv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BPChartView" destination="qaT-oR-21o" id="dOF-yg-0YM"/>
+                        <outlet property="diaTextBox" destination="2W8-Hx-sdP" id="nYq-uv-nt4"/>
+                        <outlet property="sysTextBox" destination="7SE-Su-UME" id="zOi-Pe-moy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWh-0x-zMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Pax-zy-pbT" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="JO5-Lb-1Wz" userLabel="Home">
+                    <connections>
+                        <segue destination="Pax-zy-pbT" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="TV9-3m-7q1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="759.4202898550725" y="-1319.1964285714284"/>
+        </scene>
         <!--Journal Screens-->
         <scene sceneID="0a1-RJ-nQR">
             <objects>
                 <viewController id="nIk-kr-WsY" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JqR-Ft-lyA"/>
-                        <viewControllerLayoutGuide type="bottom" id="Auf-fk-D4a"/>
+                        <viewControllerLayoutGuide type="top" id="5pu-F3-LGR"/>
+                        <viewControllerLayoutGuide type="bottom" id="9yp-Yq-pOE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f3N-bj-BPx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -253,6 +361,9 @@
                                 <rect key="frame" x="87" y="175" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="93s-uG-mEl" appends="YES" id="ei0-hf-FA7"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bpEntry" id="y8Q-6d-jr1">
                                 <rect key="frame" x="87" y="485" width="240" height="240"/>
@@ -288,6 +399,11 @@
                         <action selector="gohome2:" destination="nIk-kr-WsY" id="Qu8-Z6-bhr"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="93s-uG-mEl" userLabel="View Graph Button">
+                    <connections>
+                        <segue destination="lwY-v7-lr4" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="lsw-y2-d1u"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="503" y="-607"/>
         </scene>
@@ -296,8 +412,8 @@
             <objects>
                 <viewController id="HVt-mw-ntS" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3Ms-L2-StD"/>
-                        <viewControllerLayoutGuide type="bottom" id="3BJ-zh-vb0"/>
+                        <viewControllerLayoutGuide type="top" id="kTq-SH-l1S"/>
+                        <viewControllerLayoutGuide type="bottom" id="cpo-fw-dln"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="52H-s7-K4v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -405,8 +521,8 @@
             <objects>
                 <viewController id="Zaz-YG-RMo" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ydv-KM-JHe"/>
-                        <viewControllerLayoutGuide type="bottom" id="G4G-ad-p6E"/>
+                        <viewControllerLayoutGuide type="top" id="ZXq-GH-tpl"/>
+                        <viewControllerLayoutGuide type="bottom" id="cYi-Yi-iFh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GO1-fH-Tjg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -511,8 +627,8 @@
             <objects>
                 <viewController id="N9q-6h-ksW" customClass="Journal" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TVd-Ow-ZT5"/>
-                        <viewControllerLayoutGuide type="bottom" id="CMV-nZ-XAU"/>
+                        <viewControllerLayoutGuide type="top" id="c3a-mU-cEc"/>
+                        <viewControllerLayoutGuide type="bottom" id="0sD-vb-gq9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bch-4Z-lDb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -572,8 +688,8 @@
             <objects>
                 <viewController id="Is4-8A-8Zq" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lOW-mx-RfA"/>
-                        <viewControllerLayoutGuide type="bottom" id="dT0-Ht-4d4"/>
+                        <viewControllerLayoutGuide type="top" id="m69-po-B14"/>
+                        <viewControllerLayoutGuide type="bottom" id="fHn-EL-lsp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EaY-YW-bU3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -591,6 +707,9 @@
                                 <rect key="frame" x="87" y="175" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZS6-nf-Za4" appends="YES" id="FOd-cR-k2W"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bsEntry" id="rRr-6F-mud">
                                 <rect key="frame" x="87" y="485" width="240" height="240"/>
@@ -618,6 +737,11 @@
                         <action selector="gohome2:" destination="Is4-8A-8Zq" id="N4t-Eu-PGG"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="ZS6-nf-Za4" userLabel="View BS Graph Button">
+                    <connections>
+                        <segue destination="USU-GM-Vhx" kind="presentation" modalPresentationStyle="fullScreen" id="zL2-H4-v9b"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1378" y="-607"/>
         </scene>
@@ -626,8 +750,8 @@
             <objects>
                 <viewController id="2HV-tS-2Rh" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7BJ-5e-NMq"/>
-                        <viewControllerLayoutGuide type="bottom" id="SSX-Qx-WSJ"/>
+                        <viewControllerLayoutGuide type="top" id="l4L-Lg-168"/>
+                        <viewControllerLayoutGuide type="bottom" id="w5c-s1-k3Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dJK-cG-x75">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -637,14 +761,14 @@
                                 <rect key="frame" x="10" y="44" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="gx0-MA-16s" appends="YES" id="SOs-Ij-IbN"/>
-                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chGraph" id="dsM-rO-wVh">
                                 <rect key="frame" x="87" y="175" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="13a-fl-PRZ" appends="YES" id="Wpw-c8-JkV"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chEntry" id="oX3-JO-Ewm">
                                 <rect key="frame" x="87" y="485" width="240" height="240"/>
@@ -667,9 +791,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRb-Z5-cok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="waI-Xo-h7M" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="gx0-MA-16s">
+                <tapGestureRecognizer id="13a-fl-PRZ">
                     <connections>
-                        <action selector="gohome2:" destination="2HV-tS-2Rh" id="ybq-Lb-VZa"/>
+                        <segue destination="dff-5j-grB" kind="presentation" modalPresentationStyle="fullScreen" id="ZNv-OF-Qkp"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -680,8 +804,8 @@
             <objects>
                 <viewController id="DTa-4u-ppB" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AqQ-Q4-VQE"/>
-                        <viewControllerLayoutGuide type="bottom" id="4HY-cp-VJg"/>
+                        <viewControllerLayoutGuide type="top" id="34P-ze-nTn"/>
+                        <viewControllerLayoutGuide type="bottom" id="0C0-N3-gZL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WYl-ce-Hxq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -734,8 +858,8 @@
             <objects>
                 <viewController id="ixK-dm-O0a" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="W7G-9p-h99"/>
-                        <viewControllerLayoutGuide type="bottom" id="SSd-Sm-aFQ"/>
+                        <viewControllerLayoutGuide type="top" id="x2r-Oa-vvO"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ZL-Zd-scO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Stz-gp-h49">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -753,6 +877,9 @@
                                 <rect key="frame" x="87" y="175" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fNm-qx-SMQ" appends="YES" id="Exx-PY-TRo"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bwEntry" id="Xwl-fr-SX6">
                                 <rect key="frame" x="87" y="485" width="240" height="240"/>
@@ -780,6 +907,11 @@
                         <action selector="gohome2:" destination="ixK-dm-O0a" id="Hcp-kh-ISF"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="fNm-qx-SMQ">
+                    <connections>
+                        <segue destination="tpQ-hS-cGs" kind="presentation" modalPresentationStyle="fullScreen" id="uNm-Xe-kfj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2100" y="-607"/>
         </scene>
@@ -788,8 +920,8 @@
             <objects>
                 <viewController id="tjh-25-8Je" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OBd-uK-cex"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mpf-ly-82I"/>
+                        <viewControllerLayoutGuide type="top" id="8QS-gN-zcV"/>
+                        <viewControllerLayoutGuide type="bottom" id="3nT-Sy-1UC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ERo-ZQ-ws7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -842,8 +974,8 @@
             <objects>
                 <viewController id="iCv-On-84K" customClass="JournalScreens" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kKt-OE-Mnm"/>
-                        <viewControllerLayoutGuide type="bottom" id="1dp-eb-j8E"/>
+                        <viewControllerLayoutGuide type="top" id="WWZ-0X-BHH"/>
+                        <viewControllerLayoutGuide type="bottom" id="aZe-XN-MXj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ctr-ni-Tmx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -896,8 +1028,8 @@
             <objects>
                 <viewController id="cVR-MB-Wyg" customClass="ComposeViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lpo-kT-xJS"/>
-                        <viewControllerLayoutGuide type="bottom" id="FoP-ZL-v42"/>
+                        <viewControllerLayoutGuide type="top" id="A7U-Jv-B9J"/>
+                        <viewControllerLayoutGuide type="bottom" id="31e-R2-eEp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="u8h-Ae-hBW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -931,7 +1063,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Mms-fA-aNF" firstAttribute="leading" secondItem="u8h-Ae-hBW" secondAttribute="leading" id="12W-57-jdZ"/>
-                            <constraint firstItem="Mms-fA-aNF" firstAttribute="top" secondItem="lpo-kT-xJS" secondAttribute="bottom" id="2Nt-zY-fpN"/>
+                            <constraint firstItem="Mms-fA-aNF" firstAttribute="top" secondItem="A7U-Jv-B9J" secondAttribute="bottom" id="2Nt-zY-fpN"/>
                             <constraint firstAttribute="trailing" secondItem="Mms-fA-aNF" secondAttribute="trailing" id="8HO-dM-iDR"/>
                             <constraint firstAttribute="trailing" secondItem="CeA-tM-aaL" secondAttribute="trailing" id="IWB-fE-vu8"/>
                             <constraint firstItem="CeA-tM-aaL" firstAttribute="top" secondItem="Mms-fA-aNF" secondAttribute="bottom" id="SDl-Tq-Hvf"/>
@@ -952,8 +1084,8 @@
             <objects>
                 <viewController title="resource" id="gjI-mZ-vhN" customClass="ComposeViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wJg-df-1zv"/>
-                        <viewControllerLayoutGuide type="bottom" id="r9g-uk-vMu"/>
+                        <viewControllerLayoutGuide type="top" id="8Ug-pw-73y"/>
+                        <viewControllerLayoutGuide type="bottom" id="gNR-HM-ahX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S4T-wS-FPb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -984,7 +1116,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.8980392157" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="exx-a5-DqP" firstAttribute="top" secondItem="wJg-df-1zv" secondAttribute="bottom" id="8gZ-SY-AP2"/>
+                            <constraint firstItem="exx-a5-DqP" firstAttribute="top" secondItem="8Ug-pw-73y" secondAttribute="bottom" id="8gZ-SY-AP2"/>
                             <constraint firstAttribute="bottom" secondItem="exx-a5-DqP" secondAttribute="bottom" id="auY-sh-Te7"/>
                             <constraint firstItem="exx-a5-DqP" firstAttribute="leading" secondItem="S4T-wS-FPb" secondAttribute="leading" id="rmc-5K-EYG"/>
                             <constraint firstAttribute="trailing" secondItem="exx-a5-DqP" secondAttribute="trailing" id="wJO-eu-RrW"/>
@@ -1007,6 +1139,204 @@
                 <tapGestureRecognizer id="Wpa-jP-h3v"/>
             </objects>
             <point key="canvasLocation" x="-123.18840579710145" y="136.60714285714286"/>
+        </scene>
+        <!--Charts View Controller-->
+        <scene sceneID="tmH-LQ-aO1">
+            <objects>
+                <viewController id="USU-GM-Vhx" customClass="BSChartsViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bYK-jy-RDx"/>
+                        <viewControllerLayoutGuide type="bottom" id="cDF-8x-VQv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z5G-Lo-Baa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bsHome" translatesAutoresizingMaskIntoConstraints="NO" id="Hhf-3w-y5z">
+                                <rect key="frame" x="20" y="-137.66666666666666" width="50" height="400.33333333333326"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400.33333333333331" id="el6-zk-XE9"/>
+                                    <constraint firstAttribute="width" constant="50" id="lRL-h4-o9X"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f4j-Sq-Wmh" appends="YES" id="CWT-en-HrO"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LNw-Eg-ogN">
+                                <rect key="frame" x="229" y="52" width="165" height="38"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Ir0-50-8Fg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.51372549019607838" green="0.36470588235294116" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-zn-t6j" userLabel="BS Chart View" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="122" width="374" height="547"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zAx-zn-t6j" firstAttribute="leading" secondItem="z5G-Lo-Baa" secondAttribute="leadingMargin" id="E2T-qF-Onw"/>
+                            <constraint firstItem="LNw-Eg-ogN" firstAttribute="trailing" secondItem="z5G-Lo-Baa" secondAttribute="trailingMargin" id="GJH-eV-8As"/>
+                            <constraint firstItem="LNw-Eg-ogN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hhf-3w-y5z" secondAttribute="trailing" constant="8" symbolic="YES" id="L3e-my-YSX"/>
+                            <constraint firstItem="cDF-8x-VQv" firstAttribute="top" secondItem="zAx-zn-t6j" secondAttribute="bottom" constant="193" id="Urq-oS-RrX"/>
+                            <constraint firstItem="LNw-Eg-ogN" firstAttribute="top" secondItem="bYK-jy-RDx" secondAttribute="bottom" constant="8" symbolic="YES" id="YNo-dm-dnh"/>
+                            <constraint firstItem="Hhf-3w-y5z" firstAttribute="leading" secondItem="zAx-zn-t6j" secondAttribute="leading" id="ZVh-Vw-47D"/>
+                            <constraint firstItem="Hhf-3w-y5z" firstAttribute="centerY" secondItem="LNw-Eg-ogN" secondAttribute="centerY" constant="-8.5000000000000284" id="dC0-vl-bfV"/>
+                            <constraint firstItem="zAx-zn-t6j" firstAttribute="top" secondItem="LNw-Eg-ogN" secondAttribute="bottom" constant="32" id="eUq-hf-A6q"/>
+                            <constraint firstItem="LNw-Eg-ogN" firstAttribute="trailing" secondItem="zAx-zn-t6j" secondAttribute="trailing" id="vgU-XP-EWS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BSChartView" destination="zAx-zn-t6j" id="Yqk-5i-FBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFE-6B-law" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1nd-vI-9aX" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="f4j-Sq-Wmh" userLabel="Home">
+                    <connections>
+                        <segue destination="1nd-vI-9aX" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="nKO-LN-IKn"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1645" y="-1319"/>
+        </scene>
+        <!--Charts View Controller-->
+        <scene sceneID="aDo-yC-fzW">
+            <objects>
+                <viewController id="tpQ-hS-cGs" customClass="BWChartsViewController" customModule="iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fqm-ka-0ke"/>
+                        <viewControllerLayoutGuide type="bottom" id="JqH-Zj-yjU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SaI-zj-Yno">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bwHome" translatesAutoresizingMaskIntoConstraints="NO" id="dsW-eD-hI6">
+                                <rect key="frame" x="20" y="-137.66666666666666" width="50.000000000000114" height="400.33333333333326"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="759-do-g0T"/>
+                                    <constraint firstAttribute="height" constant="400.33333333333331" id="7bi-JV-Xto"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7u9-Ua-tQv" appends="YES" id="Btn-NT-OM6"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VTh-1Z-X4o">
+                                <rect key="frame" x="222.33333333333337" y="52" width="171.66666666666663" height="38"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="bd0-sA-8vV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.95294117647058818" green="0.44313725490196076" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJt-ur-trU" userLabel="BW Chart View" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="122" width="374" height="547"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="dsW-eD-hI6" firstAttribute="leading" secondItem="fJt-ur-trU" secondAttribute="leading" id="FIC-Lz-9Q5"/>
+                            <constraint firstItem="VTh-1Z-X4o" firstAttribute="top" secondItem="Fqm-ka-0ke" secondAttribute="bottom" constant="8" symbolic="YES" id="Jph-Jl-FaE"/>
+                            <constraint firstItem="JqH-Zj-yjU" firstAttribute="top" secondItem="fJt-ur-trU" secondAttribute="bottom" constant="193" id="NwW-OI-Dbc"/>
+                            <constraint firstItem="VTh-1Z-X4o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dsW-eD-hI6" secondAttribute="trailing" constant="8" symbolic="YES" id="ScU-7R-BrW"/>
+                            <constraint firstItem="VTh-1Z-X4o" firstAttribute="trailing" secondItem="SaI-zj-Yno" secondAttribute="trailingMargin" id="adW-jH-rXL"/>
+                            <constraint firstItem="fJt-ur-trU" firstAttribute="leading" secondItem="SaI-zj-Yno" secondAttribute="leadingMargin" id="h6t-AA-NVh"/>
+                            <constraint firstItem="dsW-eD-hI6" firstAttribute="centerY" secondItem="VTh-1Z-X4o" secondAttribute="centerY" constant="-8.5000000000000284" id="jtX-yT-ifc"/>
+                            <constraint firstItem="fJt-ur-trU" firstAttribute="top" secondItem="VTh-1Z-X4o" secondAttribute="bottom" constant="32" id="mUq-aY-dVW"/>
+                            <constraint firstItem="VTh-1Z-X4o" firstAttribute="trailing" secondItem="fJt-ur-trU" secondAttribute="trailing" id="uIk-LN-wPN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BWChartView" destination="fJt-ur-trU" id="e5N-BV-oKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tgm-Nu-DAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="49c-c4-DR9" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="7u9-Ua-tQv" userLabel="Home">
+                    <connections>
+                        <segue destination="49c-c4-DR9" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="c9W-XJ-nlj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2484" y="-1319"/>
+        </scene>
+        <!--Charts View Controller-->
+        <scene sceneID="eOA-WR-Lwi">
+            <objects>
+                <viewController id="dff-5j-grB" userLabel="Charts View Controller" customClass="CholesterolChartsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8eG-p7-Lf0"/>
+                        <viewControllerLayoutGuide type="bottom" id="c4d-K1-WXZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vht-dl-dC3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chHome" translatesAutoresizingMaskIntoConstraints="NO" id="iiW-MH-JbF">
+                                <rect key="frame" x="20" y="-137.66666666666666" width="50" height="400.33333333333326"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="gcO-km-9rx"/>
+                                    <constraint firstAttribute="height" constant="400.33333333333331" id="lR3-1e-fHp"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fbT-fz-Gap" appends="YES" id="AsZ-s5-IUa"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cholesterol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lpv-0m-6uv">
+                                <rect key="frame" x="237.66666666666663" y="52" width="156.33333333333337" height="38"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="IZA-H9-CeC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.85490196078431369" green="0.62745098039215685" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.69411764710000001" green="0.1215686275" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKP-UC-0qO" userLabel="Cholesterol Chart View" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="122" width="374" height="547"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="iiW-MH-JbF" firstAttribute="leading" secondItem="iKP-UC-0qO" secondAttribute="leading" id="0FQ-Kv-7Vv"/>
+                            <constraint firstItem="Lpv-0m-6uv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iiW-MH-JbF" secondAttribute="trailing" constant="8" symbolic="YES" id="4Vg-CO-v6S"/>
+                            <constraint firstItem="Lpv-0m-6uv" firstAttribute="trailing" secondItem="iKP-UC-0qO" secondAttribute="trailing" id="6GB-nP-GHR"/>
+                            <constraint firstItem="iiW-MH-JbF" firstAttribute="centerY" secondItem="Lpv-0m-6uv" secondAttribute="centerY" constant="-8.5000000000000284" id="JTh-82-R1q"/>
+                            <constraint firstItem="iKP-UC-0qO" firstAttribute="leading" secondItem="vht-dl-dC3" secondAttribute="leadingMargin" id="Toe-QD-8iA"/>
+                            <constraint firstItem="Lpv-0m-6uv" firstAttribute="top" secondItem="8eG-p7-Lf0" secondAttribute="bottom" constant="8" symbolic="YES" id="fCH-Tg-sg1"/>
+                            <constraint firstItem="Lpv-0m-6uv" firstAttribute="trailing" secondItem="vht-dl-dC3" secondAttribute="trailingMargin" id="gBF-Re-6f1"/>
+                            <constraint firstItem="c4d-K1-WXZ" firstAttribute="top" secondItem="iKP-UC-0qO" secondAttribute="bottom" constant="193" id="m0U-Tl-2rQ"/>
+                            <constraint firstItem="iKP-UC-0qO" firstAttribute="top" secondItem="Lpv-0m-6uv" secondAttribute="bottom" constant="32" id="t5p-Hx-ay2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ChChartView" destination="iKP-UC-0qO" id="eSV-UD-JU9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2d-kZ-Quc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="EaD-3g-PM4" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="fbT-fz-Gap" userLabel="Home">
+                    <connections>
+                        <segue destination="EaD-3g-PM4" kind="unwind" identifier="goHome2" unwindAction="goToHome2WithSegue:" id="emq-MR-a2w"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-586" y="846"/>
         </scene>
     </scenes>
     <resources>
